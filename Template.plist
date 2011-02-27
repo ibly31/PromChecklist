@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<array>
+		<dict>
+			<key>Name</key>
+			<string>Shop For Dress</string>
+			<key>Description</key>
+			<string>Shop for your dress and buy it. Make sure to schedule your alteration and obtain a fabric swatch if possible.</string>
+			<key>Offset</key>
+			<integer>-90</integer>
+		</dict>
+	</array>
+	<array>
+		<dict>
+			<key>Name</key>
+			<string>Make Hair Appointment</string>
+			<key>Description</key>
+			<string>Hair salons are busy during prom season, make sure to make your appointments.</string>
+			<key>Offset</key>
+			<integer>-60</integer>
+		</dict>
+		<dict>
+			<key>Name</key>
+			<string>Reserve Limo</string>
+			<key>Description</key>
+			<string>If you and your friends are planning to arrive in style, make sure to reserve a limo.</string>
+			<key>Offset</key>
+			<integer>-60</integer>
+		</dict>
+		<dict>
+			<key>Name</key>
+			<string>Discuss After-Prom Plans</string>
+			<key>Description</key>
+			<string>If you and your friends plan to do things after prom, start talking about what you are going to do.</string>
+			<key>Offset</key>
+			<integer>-60</integer>
+		</dict>
+		<dict>
+			<key>Name</key>
+			<string>Shop For Shoes</string>
+			<key>Description</key>
+			<string>Go to a shoe store and start shopping for the kind of shoe you want.</string>
+			<key>Offset</key>
+			<integer>-60</integer>
+		</dict>
+		<dict>
+			<key>Name</key>
+			<string>Shop For Special Undergarments</string>
+			<key>Description</key>
+			<string>Start shopping for your special bra or Spanx.</string>
+			<key>Offset</key>
+			<integer>-60</integer>
+		</dict>
+		<dict>
+			<key>Name</key>
+			<string>Shop For Evening Bag</string>
+			<key>Description</key>
+			<string>If you don't already have a purse or evening bag to store everything, shop for one around two months out.</string>
+			<key>Offset</key>
+			<integer>-60</integer>
+		</dict>
+		<dict>
+			<key>Name</key>
+			<string>Shop For Jewelry</string>
+			<key>Description</key>
+			<string>If you want to jazz things up a bit, add some jewelry to your outfit.</string>
+			<key>Offset</key>
+			<integer>-60</integer>
+		</dict>
+		<dict>
+			<key>Name</key>
+			<string>Remind Date to Select Tux</string>
+			<key>Description</key>
+			<string>Provide a fabric swatch to your date to match the color of your dress with his tie and cummerbund.</string>
+			<key>Offset</key>
+			<integer>-60</integer>
+		</dict>
+	</array>
+	<array>
+		<dict>
+			<key>Name</key>
+			<string>Buy Prom Tickets</string>
+			<key>Description</key>
+			<string>Your school should start getting the word out about days to buy tickets. Make sure to bring school ID with you.</string>
+			<key>Offset</key>
+			<integer>-30</integer>
+		</dict>
+		<dict>
+			<key>Name</key>
+			<string>Pick Up Dress</string>
+			<key>Description</key>
+			<string>Pick up your dress so that you actually have it for the day of prom.</string>
+			<key>Offset</key>
+			<integer>-30</integer>
+		</dict>
+		<dict>
+			<key>Name</key>
+			<string>Order Boutonniere</string>
+			<key>Description</key>
+			<string>Order the boutonniere for your date's lapel.</string>
+			<key>Offset</key>
+			<integer>-30</integer>
+		</dict>
+		<dict>
+			<key>Name</key>
+			<string>Remind Date To Order Corsage</string>
+			<key>Description</key>
+			<string>Remind your date to order the corsage, hopefully he still has the fabric swatch you gave him for matching.</string>
+			<key>Offset</key>
+			<integer>-30</integer>
+		</dict>
+		<dict>
+			<key>Name</key>
+			<string>Make Manicure/Pedicure Appointments</string>
+			<key>Description</key>
+			<string>Schedule appointment(s) at a local nail salon.</string>
+			<key>Offset</key>
+			<integer>-30</integer>
+		</dict>
+	</array>
+	<array>
+		<dict>
+			<key>Name</key>
+			<string>Break In Shoes</string>
+			<key>Description</key>
+			<string>While you are bored or doing homework, break in your shoes by walking around in them at home.</string>
+			<key>Offset</key>
+			<integer>-7</integer>
+		</dict>
+		<dict>
+			<key>Name</key>
+			<string>Look for Photos For Your Hairstyle</string>
+			<key>Description</key>
+			<string>Look online or in magazines of a clip of a hairstyle you want. This makes it a lot easier for your hair stylist.</string>
+			<key>Offset</key>
+			<integer>-7</integer>
+		</dict>
+		<dict>
+			<key>Name</key>
+			<string>Makeup Dry Run</string>
+			<key>Description</key>
+			<string>Put on all your makeup to see how it looks/matches the rest of your outfit.</string>
+			<key>Offset</key>
+			<integer>-7</integer>
+		</dict>
+	</array>
+	<array>
+		<dict>
+			<key>Name</key>
+			<string>Facial</string>
+			<key>Description</key>
+			<string>If you want, get a facial at a local salon.</string>
+			<key>Offset</key>
+			<integer>-1</integer>
+		</dict>
+		<dict>
+			<key>Name</key>
+			<string>Spray Tan</string>
+			<key>Description</key>
+			<string>If you want, get a spray tan to look your best for prom.</string>
+			<key>Offset</key>
+			<integer>-1</integer>
+		</dict>
+		<dict>
+			<key>Name</key>
+			<string>Remind Date About Tux</string>
+			<key>Description</key>
+			<string>Remind your date to pick up his tux, corsage, and get a haircut.</string>
+			<key>Offset</key>
+			<integer>-1</integer>
+		</dict>
+		<dict>
+			<key>Name</key>
+			<string>Wash and Vacuum Car</string>
+			<key>Description</key>
+			<string>If you aren't taking a limo, make sure to wash and vacuum the car you are going in.</string>
+			<key>Offset</key>
+			<integer>-1</integer>
+		</dict>
+		<dict>
+			<key>Name</key>
+			<string>Go To The ATM</string>
+			<key>Description</key>
+			<string>Get some money so that you can enjoy the night without worrying about money.</string>
+			<key>Offset</key>
+			<integer>-1</integer>
+		</dict>
+		<dict>
+			<key>Name</key>
+			<string>Pack Your Evening Bag</string>
+			<key>Description</key>
+			<string>Pack your bag with lip-gloss, gum, money, camera and other things you may need.</string>
+			<key>Offset</key>
+			<integer>-1</integer>
+		</dict>
+	</array>
+	<array>
+		<dict>
+			<key>Name</key>
+			<string>Hair Appointment</string>
+			<key>Description</key>
+			<string>Show up to your hair appointment. IMPORTANT: Make sure to wear a button-front shirt so you can remove it without messing up your hair.</string>
+			<key>Offset</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>Name</key>
+			<string>Manicure/Pedicure Appointments</string>
+			<key>Description</key>
+			<string>Go to your manicure/pedicure appointments.</string>
+			<key>Offset</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>Name</key>
+			<string>Pick Up Flowers</string>
+			<key>Description</key>
+			<string>After picking up your flowers, make sure to refrigerate them to keep them fresh.</string>
+			<key>Offset</key>
+			<integer></integer>
+		</dict>
+	</array>
+</array>
+</plist>

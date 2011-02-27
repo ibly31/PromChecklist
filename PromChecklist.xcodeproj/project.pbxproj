@@ -1,0 +1,384 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D3623260D0F684500981E51 /* PromChecklistAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* PromChecklistAppDelegate.m */; };
+		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765FC0DF74451002DB57D /* CoreGraphics.framework */; };
+		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
+		770B1D1E131743D9008260C9 /* Template.plist in Resources */ = {isa = PBXBuildFile; fileRef = 770B1D1D131743D9008260C9 /* Template.plist */; };
+		77381B241319744100B3A9D6 /* RemindMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77381B221319744100B3A9D6 /* RemindMeViewController.m */; };
+		77381B251319744100B3A9D6 /* RemindMeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 77381B231319744100B3A9D6 /* RemindMeViewController.xib */; };
+		778A37811310AF6E0092BAA8 /* ChecklistViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 778A377F1310AF6E0092BAA8 /* ChecklistViewController.m */; };
+		778A37821310AF6E0092BAA8 /* ChecklistViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 778A37801310AF6E0092BAA8 /* ChecklistViewController.xib */; };
+		77C4E0241318698800D300EE /* Back.png in Resources */ = {isa = PBXBuildFile; fileRef = 77C4E0231318698800D300EE /* Back.png */; };
+		77C4E0EC131879FB00D300EE /* CheckHalf.png in Resources */ = {isa = PBXBuildFile; fileRef = 77C4E0EB131879FB00D300EE /* CheckHalf.png */; };
+		77C4E13413187C3500D300EE /* ChecklistDetailedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77C4E13213187C3500D300EE /* ChecklistDetailedViewController.m */; };
+		77C4E13513187C3500D300EE /* ChecklistDetailedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 77C4E13313187C3500D300EE /* ChecklistDetailedViewController.xib */; };
+		77E260D0131AC7A300789A6F /* AddNewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77E260CE131AC7A300789A6F /* AddNewViewController.m */; };
+		77E260D1131AC7A300789A6F /* AddNewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 77E260CF131AC7A300789A6F /* AddNewViewController.xib */; };
+		77E475DE130F23760064F9C0 /* InitialLoadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77E475DC130F23760064F9C0 /* InitialLoadViewController.m */; };
+		77E475DF130F23760064F9C0 /* InitialLoadViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 77E475DD130F23760064F9C0 /* InitialLoadViewController.xib */; };
+		77E4763B130F35B60064F9C0 /* OptionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77E47639130F35B60064F9C0 /* OptionsViewController.m */; };
+		77E4763C130F35B60064F9C0 /* OptionsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 77E4763A130F35B60064F9C0 /* OptionsViewController.xib */; };
+		77E4765E130F3C210064F9C0 /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 77E4765D130F3C210064F9C0 /* TableViewCell.m */; };
+		77E4766E130F3D970064F9C0 /* Check.png in Resources */ = {isa = PBXBuildFile; fileRef = 77E4766D130F3D970064F9C0 /* Check.png */; };
+		77F72D8A130E04AC0063B68C /* SplashScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77F72D88130E04AC0063B68C /* SplashScreenViewController.m */; };
+		77F72D8B130E04AC0063B68C /* SplashScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 77F72D89130E04AC0063B68C /* SplashScreenViewController.xib */; };
+		77F72DE4130E08DC0063B68C /* MainMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77F72DE2130E08DC0063B68C /* MainMenuViewController.m */; };
+		77F72DE5130E08DC0063B68C /* MainMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 77F72DE3130E08DC0063B68C /* MainMenuViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1D3623240D0F684500981E51 /* PromChecklistAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PromChecklistAppDelegate.h; sourceTree = "<group>"; };
+		1D3623250D0F684500981E51 /* PromChecklistAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PromChecklistAppDelegate.m; sourceTree = "<group>"; };
+		1D6058910D05DD3D006BFB54 /* PromChecklist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PromChecklist.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		288765FC0DF74451002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		28AD733E0D9D9553002E5188 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		32CA4F630368D1EE00C91783 /* PromChecklist_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PromChecklist_Prefix.pch; sourceTree = "<group>"; };
+		770B1D1D131743D9008260C9 /* Template.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Template.plist; path = ../../Desktop/Template.plist; sourceTree = SOURCE_ROOT; };
+		77381B211319744100B3A9D6 /* RemindMeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RemindMeViewController.h; sourceTree = "<group>"; };
+		77381B221319744100B3A9D6 /* RemindMeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RemindMeViewController.m; sourceTree = "<group>"; };
+		77381B231319744100B3A9D6 /* RemindMeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RemindMeViewController.xib; sourceTree = "<group>"; };
+		778A377E1310AF6E0092BAA8 /* ChecklistViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChecklistViewController.h; sourceTree = "<group>"; };
+		778A377F1310AF6E0092BAA8 /* ChecklistViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChecklistViewController.m; sourceTree = "<group>"; };
+		778A37801310AF6E0092BAA8 /* ChecklistViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChecklistViewController.xib; sourceTree = "<group>"; };
+		77C4E0231318698800D300EE /* Back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Back.png; sourceTree = "<group>"; };
+		77C4E0EB131879FB00D300EE /* CheckHalf.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CheckHalf.png; sourceTree = "<group>"; };
+		77C4E13113187C3500D300EE /* ChecklistDetailedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChecklistDetailedViewController.h; sourceTree = "<group>"; };
+		77C4E13213187C3500D300EE /* ChecklistDetailedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChecklistDetailedViewController.m; sourceTree = "<group>"; };
+		77C4E13313187C3500D300EE /* ChecklistDetailedViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChecklistDetailedViewController.xib; sourceTree = "<group>"; };
+		77E260CD131AC7A300789A6F /* AddNewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddNewViewController.h; sourceTree = "<group>"; };
+		77E260CE131AC7A300789A6F /* AddNewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddNewViewController.m; sourceTree = "<group>"; };
+		77E260CF131AC7A300789A6F /* AddNewViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddNewViewController.xib; sourceTree = "<group>"; };
+		77E475DB130F23760064F9C0 /* InitialLoadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InitialLoadViewController.h; sourceTree = "<group>"; };
+		77E475DC130F23760064F9C0 /* InitialLoadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InitialLoadViewController.m; sourceTree = "<group>"; };
+		77E475DD130F23760064F9C0 /* InitialLoadViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InitialLoadViewController.xib; sourceTree = "<group>"; };
+		77E47638130F35B60064F9C0 /* OptionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OptionsViewController.h; sourceTree = "<group>"; };
+		77E47639130F35B60064F9C0 /* OptionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OptionsViewController.m; sourceTree = "<group>"; };
+		77E4763A130F35B60064F9C0 /* OptionsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OptionsViewController.xib; sourceTree = "<group>"; };
+		77E4765C130F3C210064F9C0 /* TableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewCell.h; sourceTree = "<group>"; };
+		77E4765D130F3C210064F9C0 /* TableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
+		77E4766D130F3D970064F9C0 /* Check.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Check.png; sourceTree = "<group>"; };
+		77F72D87130E04AC0063B68C /* SplashScreenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SplashScreenViewController.h; path = Classes/SplashScreenViewController.h; sourceTree = "<group>"; };
+		77F72D88130E04AC0063B68C /* SplashScreenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SplashScreenViewController.m; path = Classes/SplashScreenViewController.m; sourceTree = "<group>"; };
+		77F72D89130E04AC0063B68C /* SplashScreenViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = SplashScreenViewController.xib; path = Classes/SplashScreenViewController.xib; sourceTree = "<group>"; };
+		77F72DE1130E08DC0063B68C /* MainMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainMenuViewController.h; sourceTree = "<group>"; };
+		77F72DE2130E08DC0063B68C /* MainMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainMenuViewController.m; sourceTree = "<group>"; };
+		77F72DE3130E08DC0063B68C /* MainMenuViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainMenuViewController.xib; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* PromChecklist-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "PromChecklist-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D60588F0D05DD3D006BFB54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
+				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
+				288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				1D3623240D0F684500981E51 /* PromChecklistAppDelegate.h */,
+				1D3623250D0F684500981E51 /* PromChecklistAppDelegate.m */,
+			);
+			name = Delegate;
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D6058910D05DD3D006BFB54 /* PromChecklist.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				77E4765B130F3BCA0064F9C0 /* CheckList */,
+				77F72D8C130E04BA0063B68C /* View Controllers */,
+				080E96DDFE201D6D7F000001 /* Delegate */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = CustomTemplate;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32CA4F630368D1EE00C91783 /* PromChecklist_Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				770B1D1D131743D9008260C9 /* Template.plist */,
+				77E4766D130F3D970064F9C0 /* Check.png */,
+				77C4E0EB131879FB00D300EE /* CheckHalf.png */,
+				77C4E0231318698800D300EE /* Back.png */,
+				77E260CF131AC7A300789A6F /* AddNewViewController.xib */,
+				77381B231319744100B3A9D6 /* RemindMeViewController.xib */,
+				778A37801310AF6E0092BAA8 /* ChecklistViewController.xib */,
+				77C4E13313187C3500D300EE /* ChecklistDetailedViewController.xib */,
+				77E4763A130F35B60064F9C0 /* OptionsViewController.xib */,
+				77E475DD130F23760064F9C0 /* InitialLoadViewController.xib */,
+				77F72DE3130E08DC0063B68C /* MainMenuViewController.xib */,
+				77F72D89130E04AC0063B68C /* SplashScreenViewController.xib */,
+				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
+				8D1107310486CEB800E47090 /* PromChecklist-Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
+				1D30AB110D05D00D00671497 /* Foundation.framework */,
+				288765FC0DF74451002DB57D /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		77381B201319743200B3A9D6 /* Popup */ = {
+			isa = PBXGroup;
+			children = (
+				77381B211319744100B3A9D6 /* RemindMeViewController.h */,
+				77381B221319744100B3A9D6 /* RemindMeViewController.m */,
+				77E260CD131AC7A300789A6F /* AddNewViewController.h */,
+				77E260CE131AC7A300789A6F /* AddNewViewController.m */,
+			);
+			name = Popup;
+			sourceTree = "<group>";
+		};
+		77E47637130F35AC0064F9C0 /* Modals */ = {
+			isa = PBXGroup;
+			children = (
+				77E47638130F35B60064F9C0 /* OptionsViewController.h */,
+				77E47639130F35B60064F9C0 /* OptionsViewController.m */,
+			);
+			name = Modals;
+			sourceTree = "<group>";
+		};
+		77E4765B130F3BCA0064F9C0 /* CheckList */ = {
+			isa = PBXGroup;
+			children = (
+				77381B201319743200B3A9D6 /* Popup */,
+				77E4765C130F3C210064F9C0 /* TableViewCell.h */,
+				77E4765D130F3C210064F9C0 /* TableViewCell.m */,
+				778A377E1310AF6E0092BAA8 /* ChecklistViewController.h */,
+				778A377F1310AF6E0092BAA8 /* ChecklistViewController.m */,
+				77C4E13113187C3500D300EE /* ChecklistDetailedViewController.h */,
+				77C4E13213187C3500D300EE /* ChecklistDetailedViewController.m */,
+			);
+			name = CheckList;
+			sourceTree = "<group>";
+		};
+		77F72D8C130E04BA0063B68C /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				77E47637130F35AC0064F9C0 /* Modals */,
+				77F72DE1130E08DC0063B68C /* MainMenuViewController.h */,
+				77F72DE2130E08DC0063B68C /* MainMenuViewController.m */,
+				77F72D87130E04AC0063B68C /* SplashScreenViewController.h */,
+				77F72D88130E04AC0063B68C /* SplashScreenViewController.m */,
+				77E475DB130F23760064F9C0 /* InitialLoadViewController.h */,
+				77E475DC130F23760064F9C0 /* InitialLoadViewController.m */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D6058900D05DD3D006BFB54 /* PromChecklist */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "PromChecklist" */;
+			buildPhases = (
+				1D60588D0D05DD3D006BFB54 /* Resources */,
+				1D60588E0D05DD3D006BFB54 /* Sources */,
+				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PromChecklist;
+			productName = PromChecklist;
+			productReference = 1D6058910D05DD3D006BFB54 /* PromChecklist.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "PromChecklist" */;
+			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1D6058900D05DD3D006BFB54 /* PromChecklist */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D60588D0D05DD3D006BFB54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
+				77F72D8B130E04AC0063B68C /* SplashScreenViewController.xib in Resources */,
+				77F72DE5130E08DC0063B68C /* MainMenuViewController.xib in Resources */,
+				77E475DF130F23760064F9C0 /* InitialLoadViewController.xib in Resources */,
+				77E4763C130F35B60064F9C0 /* OptionsViewController.xib in Resources */,
+				77E4766E130F3D970064F9C0 /* Check.png in Resources */,
+				778A37821310AF6E0092BAA8 /* ChecklistViewController.xib in Resources */,
+				770B1D1E131743D9008260C9 /* Template.plist in Resources */,
+				77C4E0241318698800D300EE /* Back.png in Resources */,
+				77C4E0EC131879FB00D300EE /* CheckHalf.png in Resources */,
+				77C4E13513187C3500D300EE /* ChecklistDetailedViewController.xib in Resources */,
+				77381B251319744100B3A9D6 /* RemindMeViewController.xib in Resources */,
+				77E260D1131AC7A300789A6F /* AddNewViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D60588E0D05DD3D006BFB54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
+				1D3623260D0F684500981E51 /* PromChecklistAppDelegate.m in Sources */,
+				77F72D8A130E04AC0063B68C /* SplashScreenViewController.m in Sources */,
+				77F72DE4130E08DC0063B68C /* MainMenuViewController.m in Sources */,
+				77E475DE130F23760064F9C0 /* InitialLoadViewController.m in Sources */,
+				77E4763B130F35B60064F9C0 /* OptionsViewController.m in Sources */,
+				77E4765E130F3C210064F9C0 /* TableViewCell.m in Sources */,
+				778A37811310AF6E0092BAA8 /* ChecklistViewController.m in Sources */,
+				77C4E13413187C3500D300EE /* ChecklistDetailedViewController.m in Sources */,
+				77381B241319744100B3A9D6 /* RemindMeViewController.m in Sources */,
+				77E260D0131AC7A300789A6F /* AddNewViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1D6058940D05DD3E006BFB54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = PromChecklist_Prefix.pch;
+				GCC_WARN_UNUSED_VARIABLE = NO;
+				INFOPLIST_FILE = "PromChecklist-Info.plist";
+				PRODUCT_NAME = PromChecklist;
+			};
+			name = Debug;
+		};
+		1D6058950D05DD3E006BFB54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = PromChecklist_Prefix.pch;
+				INFOPLIST_FILE = "PromChecklist-Info.plist";
+				PRODUCT_NAME = PromChecklist;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PREBINDING = NO;
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "PromChecklist" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D6058940D05DD3E006BFB54 /* Debug */,
+				1D6058950D05DD3E006BFB54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "PromChecklist" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}
