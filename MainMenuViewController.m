@@ -24,7 +24,7 @@
 }
 
 - (void)viewDidLoad{
-//	[self viewChecklist];
+	[self viewChecklist];
 }
 
 - (IBAction)viewChecklist{

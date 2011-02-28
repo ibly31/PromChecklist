@@ -28,6 +28,7 @@
 		[tv setRowHeight: 64.0f];
 		[tv setSeparatorStyle: UITableViewCellSeparatorStyleSingleLine];
 		[tv setShowsVerticalScrollIndicator: NO];
+		[tv setAllowsSelectionDuringEditing: YES];
 		
 		NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
 		NSString *documentsDirectory = [paths objectAtIndex: 0];
@@ -35,17 +36,43 @@
 		
 		temp = [[NSArray alloc] initWithContentsOfFile: checklistFileName];
 		
-		UIBarButtonItem *addNewButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(addNewItem)];
-		[self.navigationItem setRightBarButtonItem: addNewButton];
-		[addNewButton release];
+		UIBarButtonItem *startEditing = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemEdit target:self action:@selector(toggleEditing)];
+		[self.navigationItem setRightBarButtonItem: startEditing];
+		[startEditing release];
     }
     return self;
 }
 
+- (IBAction)toggleEditing{
+	if(tv.editing == NO){
+		[tv setEditing:YES animated:YES];
+		
+		UIBarButtonItem *stopEditing = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone target:self action:@selector(toggleEditing)];
+		[self.navigationItem setLeftBarButtonItem: stopEditing animated: YES];
+		[stopEditing release];
+		
+		UIBarButtonItem *addNewButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(addNewItem)];
+		[self.navigationItem setRightBarButtonItem: addNewButton animated: YES];
+		[addNewButton release];
+	}else{
+		[tv setEditing:NO animated:YES];
+		[self.navigationItem setLeftBarButtonItem: nil animated:YES];
+		UIBarButtonItem *startEditing = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemEdit target:self action:@selector(toggleEditing)];
+		[self.navigationItem setRightBarButtonItem: startEditing animated: YES];
+		[startEditing release];
+	}
+}
+
+
+
 - (IBAction)addNewItem{
 	AddNewViewController *anvc = [[AddNewViewController alloc] initWithNibName:@"AddNewViewController" bundle:nil];
-	PromChecklistAppDelegate *pcad = [[UIApplication sharedApplication] delegate];
-	[pcad.navController pushViewController:anvc animated:YES];
+	[anvc setCvc: self];
+	UINavigationController *popupNav = [[UINavigationController alloc] initWithRootViewController: anvc];
+	[self presentModalViewController:popupNav animated:YES];
+	[popupNav.navigationBar setTintColor: [UIColor colorWithRed:0.8f green:0.1f blue:0.1f alpha:1.0f]];
+	[popupNav release];
+	
 	[anvc release];
 }
 
@@ -57,12 +84,31 @@
     return [[temp objectAtIndex: section] count];
 }
 
+- (BOOL)tableView:(UITableView *)tableView shouldIndentWhileEditingRowAtIndexPath:(NSIndexPath *)indexPath{
+	return YES;
+}
+
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
 	return 6;
 }
 
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section{
 	return [[NSArray arrayWithObjects: @"3 Months Before Prom", @"2 Months Before Prom", @"1 Month Before Prom", @"One Week Before Prom", @"1 Day Before Prom", @"Day Of Prom",nil] objectAtIndex: section];
+}
+
+- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath{
+	return YES;
+}
+
+- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath{
+	NSDictionary *currentDict = [[temp objectAtIndex: [fromIndexPath section]] objectAtIndex: [fromIndexPath row]];
+	[[temp objectAtIndex: [toIndexPath section]] insertObject:currentDict atIndex:[toIndexPath row]];
+	[[temp objectAtIndex: [fromIndexPath section]] removeObjectAtIndex: [fromIndexPath row]];
+	NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+	NSString *documentsDirectory = [paths objectAtIndex: 0];
+	NSString *checklistName = [documentsDirectory stringByAppendingPathComponent: @"Checklist.plist"];
+	[temp writeToFile: checklistName atomically: YES];
+	[tv reloadData];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {

@@ -8,25 +8,19 @@
 
 #import <UIKit/UIKit.h>
 
+@class ChecklistViewController;
 
-@interface AddNewViewController : UIViewController <UIPickerViewDelegate, UIPickerViewDataSource>{
-	UITextField *nameField;
-	UITextField *descField;
+@interface AddNewViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>{	
+	UITableView *tv;
 	
-	UIPickerView *sectionPicker;
-	
-	UIBarButtonItem *doneEdit;
+	ChecklistViewController *cvc;
 }
 
-@property (nonatomic, retain) IBOutlet UITextField *nameField;
-@property (nonatomic, retain) IBOutlet UITextField *descField;
-
-@property (nonatomic, retain) IBOutlet UIPickerView *sectionPicker;
-
-@property (nonatomic, retain) UIBarButtonItem *doneEdit;
+@property (nonatomic, retain) IBOutlet UITableView *tv;
+@property (nonatomic, retain) ChecklistViewController *cvc;
 
 - (IBAction)add;
-- (IBAction)stopEdit;
-- (IBAction)startEdit;
+- (IBAction)cancel;
+
 
 @end

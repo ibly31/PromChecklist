@@ -27,34 +27,34 @@
 		UIImage *bk = [[UIImage alloc] initWithContentsOfFile: [[NSBundle mainBundle] pathForResource:@"Back" ofType:@"png"]];
 		[checkBack setImage: bk];
 		[bk release];
-		[self addSubview: checkBack];
+		[self.contentView addSubview: checkBack];
 		
 		self.checkHalf = [[UIImageView alloc] initWithFrame: CGRectMake(10.0f, 25.0f, 19.0f, 19.0f)];
 		UIImage *ch = [[UIImage alloc] initWithContentsOfFile: [[NSBundle mainBundle] pathForResource:@"CheckHalf" ofType:@"png"]];
 		[checkHalf setImage: ch];
 		[ch release];
-		[self addSubview: checkHalf];
+		[self.contentView addSubview: checkHalf];
 		[checkHalf setHidden: YES];
 		
 		self.checkMark = [[UIImageView alloc] initWithFrame: CGRectMake(10.0f, 25.0f, 19.0f, 19.0f)];
 		UIImage *ck = [[UIImage alloc] initWithContentsOfFile: [[NSBundle mainBundle] pathForResource:@"Check" ofType:@"png"]];
 		[checkMark setImage: ck];
 		[ck release];
-		[self addSubview: checkMark];
+		[self.contentView addSubview: checkMark];
 		[checkMark setHidden: YES];
 		
 		checked = 0;
 		
 		self.nameLabel = [[UILabel alloc] initWithFrame: CGRectMake(40.0f, 20.0f, 240.0f, 20.0f)];
 		//nameLabel.backgroundColor = [UIColor redColor];
-		[self addSubview: nameLabel];
+		[self.contentView addSubview: nameLabel];
 		[nameLabel setText: @""];
 		
 		self.remindLabel = [[UILabel alloc] initWithFrame: CGRectMake(40.0f, 40.0f, 240.0f, 20.0f)];
 		//remindLabel.backgroundColor = [UIColor greenColor];
 		remindLabel.font = [UIFont systemFontOfSize: 12.0f];
 		remindLabel.textColor = [UIColor lightGrayColor];
-		[self addSubview: remindLabel];
+		[self.contentView addSubview: remindLabel];
 		[remindLabel setText: @""];
 		
 		self.accessoryType = UITableViewCellAccessoryDisclosureIndicator;

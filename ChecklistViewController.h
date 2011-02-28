@@ -18,7 +18,8 @@
 @property (nonatomic, retain) NSArray *temp;
 
 - (void)didChangeProgressAtIndexPath:(NSIndexPath *)index newProg:(int)newProg;
-- (IBAction)addNewItem;
 
+- (IBAction)toggleEditing;
+- (IBAction)addNewItem;
 
 @end

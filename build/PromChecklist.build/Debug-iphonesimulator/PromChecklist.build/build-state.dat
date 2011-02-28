@@ -1,7 +1,7 @@
 TPromChecklist
 v7
 r0
-t320523141.886371
+t320562423.509469
 cCheck dependencies
 cProcessInfoPlistFile /Users/billy_connolly/Documents/PromChecklist/build/Debug-iphonesimulator/PromChecklist.app/Info.plist PromChecklist-Info.plist
 cCompileXIB /Users/billy_connolly/Documents/PromChecklist/MainWindow.xib
@@ -17,6 +17,7 @@ cCpResource build/Debug-iphonesimulator/PromChecklist.app/CheckHalf.png CheckHal
 cCompileXIB /Users/billy_connolly/Documents/PromChecklist/ChecklistDetailedViewController.xib
 cCompileXIB /Users/billy_connolly/Documents/PromChecklist/RemindMeViewController.xib
 cCompileXIB /Users/billy_connolly/Documents/PromChecklist/AddNewViewController.xib
+cCompileXIB /Users/billy_connolly/Documents/PromChecklist/AddNewDetailedViewController.xib
 cProcessPCH /var/folders/XV/XVklkd+3Eyi9KQgq0ucWa++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/PromChecklist_Prefix-cdferppcykbbfegonjrzyzintbrl/PromChecklist_Prefix.pch.gch PromChecklist_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
 cCompileC build/PromChecklist.build/Debug-iphonesimulator/PromChecklist.build/Objects-normal/i386/main.o /Users/billy_connolly/Documents/PromChecklist/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
 cCompileC build/PromChecklist.build/Debug-iphonesimulator/PromChecklist.build/Objects-normal/i386/PromChecklistAppDelegate.o /Users/billy_connolly/Documents/PromChecklist/Classes/PromChecklistAppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
@@ -29,6 +30,7 @@ cCompileC build/PromChecklist.build/Debug-iphonesimulator/PromChecklist.build/Ob
 cCompileC build/PromChecklist.build/Debug-iphonesimulator/PromChecklist.build/Objects-normal/i386/ChecklistDetailedViewController.o /Users/billy_connolly/Documents/PromChecklist/ChecklistDetailedViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
 cCompileC build/PromChecklist.build/Debug-iphonesimulator/PromChecklist.build/Objects-normal/i386/RemindMeViewController.o /Users/billy_connolly/Documents/PromChecklist/RemindMeViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
 cCompileC build/PromChecklist.build/Debug-iphonesimulator/PromChecklist.build/Objects-normal/i386/AddNewViewController.o /Users/billy_connolly/Documents/PromChecklist/AddNewViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/PromChecklist.build/Debug-iphonesimulator/PromChecklist.build/Objects-normal/i386/AddNewDetailedViewController.o /Users/billy_connolly/Documents/PromChecklist/AddNewDetailedViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
 cLd /Users/billy_connolly/Documents/PromChecklist/build/Debug-iphonesimulator/PromChecklist.app/PromChecklist normal i386
 cGenerateDSYMFile /Users/billy_connolly/Documents/PromChecklist/build/Debug-iphonesimulator/PromChecklist.app.dSYM /Users/billy_connolly/Documents/PromChecklist/build/Debug-iphonesimulator/PromChecklist.app/PromChecklist
 cTouch /Users/billy_connolly/Documents/PromChecklist/build/Debug-iphonesimulator/PromChecklist.app
@@ -68,22 +70,42 @@ c000000004D685CB30000000000001AB6
 t1298685107
 s6838
 
+N/Users/billy_connolly/Documents/PromChecklist/AddNewDetailedViewController.h
+c000000004D6AF48B00000000000001EE
+t1298855051
+s494
+i<UIKit/UIKit.h>
+
+N/Users/billy_connolly/Documents/PromChecklist/AddNewDetailedViewController.m
+c000000004D6B2D420000000000000901
+t1298869570
+s2305
+i"AddNewDetailedViewController.h"
+i"AddNewViewController.h"
+
+N/Users/billy_connolly/Documents/PromChecklist/AddNewDetailedViewController.xib
+c000000004D6AF1A10000000000004FE4
+t1298854305
+s20452
+
 N/Users/billy_connolly/Documents/PromChecklist/AddNewViewController.h
-c000000004D6A939C00000000000002CE
-t1298830236
-s718
+c000000004D6B2C8E000000000000020F
+t1298869390
+s527
 i<UIKit/UIKit.h>
 
 N/Users/billy_connolly/Documents/PromChecklist/AddNewViewController.m
-c000000004D6A93F800000000000007D8
-t1298830328
-s2008
+c000000004D6B2CCF0000000000001349
+t1298869455
+s4937
 i"AddNewViewController.h"
+i"ChecklistViewController.h"
+i"AddNewDetailedViewController.h"
 
 N/Users/billy_connolly/Documents/PromChecklist/AddNewViewController.xib
-c000000004D6A93DB0000000000007ACF
-t1298830299
-s31439
+c000000004D6B224600000000000055B9
+t1298866758
+s21945
 
 N/Users/billy_connolly/Documents/PromChecklist/Back.png
 c000000004D683226000000000000FEB5
@@ -121,16 +143,16 @@ t1298755884
 s33116
 
 N/Users/billy_connolly/Documents/PromChecklist/ChecklistViewController.h
-c000000004D697984000000000000022F
-t1298758020
-s559
+c000000004D6B2C6A000000000000024A
+t1298869354
+s586
 i<UIKit/UIKit.h>
 i"TableViewCell.h"
 
 N/Users/billy_connolly/Documents/PromChecklist/ChecklistViewController.m
-c000000004D6A93310000000000001466
-t1298830129
-s5222
+c000000004D6B2D760000000000001CF4
+t1298869622
+s7412
 i"ChecklistViewController.h"
 i"ChecklistDetailedViewController.h"
 i"PromChecklistAppDelegate.h"
@@ -163,8 +185,8 @@ s404
 i<UIKit/UIKit.h>
 
 N/Users/billy_connolly/Documents/PromChecklist/Classes/SplashScreenViewController.m
-c000000004D687E640000000000000701
-t1298693732
+c000000004D6B21D50000000000000701
+t1298866645
 s1793
 i"SplashScreenViewController.h"
 i"PromChecklistAppDelegate.h"
@@ -200,9 +222,9 @@ s315
 i<UIKit/UIKit.h>
 
 N/Users/billy_connolly/Documents/PromChecklist/MainMenuViewController.m
-c000000004D693EF90000000000000874
-t1298743033
-s2164
+c000000004D6AD2CA0000000000000872
+t1298846410
+s2162
 i"MainMenuViewController.h"
 i"PromChecklistAppDelegate.h"
 i"OptionsViewController.h"
@@ -274,9 +296,9 @@ s946
 i<UIKit/UIKit.h>
 
 N/Users/billy_connolly/Documents/PromChecklist/TableViewCell.m
-c000000004D693C930000000000000E8D
-t1298742419
-s3725
+c000000004D6B1BD90000000000000EC9
+t1298865113
+s3785
 i"TableViewCell.h"
 i"ChecklistViewController.h"
 
@@ -286,16 +308,20 @@ t1298598373
 s6830
 
 N/Users/billy_connolly/Documents/PromChecklist/build/Debug-iphonesimulator/PromChecklist.app
-t1298830341
-s612
+t1298869623
+s646
 
 N/Users/billy_connolly/Documents/PromChecklist/build/Debug-iphonesimulator/PromChecklist.app.dSYM
-t1298830341
+t1298869623
 s102
 
+N/Users/billy_connolly/Documents/PromChecklist/build/Debug-iphonesimulator/PromChecklist.app/AddNewDetailedViewController.nib
+t1298854316
+s1216
+
 N/Users/billy_connolly/Documents/PromChecklist/build/Debug-iphonesimulator/PromChecklist.app/AddNewViewController.nib
-t1298830307
-s2800
+t1298867249
+s1216
 
 N/Users/billy_connolly/Documents/PromChecklist/build/Debug-iphonesimulator/PromChecklist.app/Back.png
 t1298684511
@@ -342,8 +368,8 @@ t1298684509
 s8
 
 N/Users/billy_connolly/Documents/PromChecklist/build/Debug-iphonesimulator/PromChecklist.app/PromChecklist
-t1298830341
-s77208
+t1298869623
+s92640
 
 N/Users/billy_connolly/Documents/PromChecklist/build/Debug-iphonesimulator/PromChecklist.app/RemindMeViewController.nib
 t1298757096
@@ -361,50 +387,54 @@ N/Users/billy_connolly/Documents/PromChecklist/build/Debug-iphonesimulator/PromC
 t1298685108
 s3357
 
+N/Users/billy_connolly/Documents/PromChecklist/build/PromChecklist.build/Debug-iphonesimulator/PromChecklist.build/Objects-normal/i386/AddNewDetailedViewController.o
+t1298869570
+s52916
+
 N/Users/billy_connolly/Documents/PromChecklist/build/PromChecklist.build/Debug-iphonesimulator/PromChecklist.build/Objects-normal/i386/AddNewViewController.o
-t1298830341
-s51400
+t1298869456
+s61140
 
 N/Users/billy_connolly/Documents/PromChecklist/build/PromChecklist.build/Debug-iphonesimulator/PromChecklist.build/Objects-normal/i386/ChecklistDetailedViewController.o
-t1298758105
+t1298869362
 s67660
 
 N/Users/billy_connolly/Documents/PromChecklist/build/PromChecklist.build/Debug-iphonesimulator/PromChecklist.build/Objects-normal/i386/ChecklistViewController.o
-t1298830307
-s73604
+t1298869623
+s79304
 
 N/Users/billy_connolly/Documents/PromChecklist/build/PromChecklist.build/Debug-iphonesimulator/PromChecklist.build/Objects-normal/i386/InitialLoadViewController.o
 t1298754954
 s59388
 
 N/Users/billy_connolly/Documents/PromChecklist/build/PromChecklist.build/Debug-iphonesimulator/PromChecklist.build/Objects-normal/i386/MainMenuViewController.o
-t1298758105
-s50520
+t1298869362
+s50672
 
 N/Users/billy_connolly/Documents/PromChecklist/build/PromChecklist.build/Debug-iphonesimulator/PromChecklist.build/Objects-normal/i386/OptionsViewController.o
 t1298684512
 s38244
 
 N/Users/billy_connolly/Documents/PromChecklist/build/PromChecklist.build/Debug-iphonesimulator/PromChecklist.build/Objects-normal/i386/PromChecklist.LinkFileList
-c000000004D6A927000000000000006CA
-t1298829936
-s1738
+c000000004D6AED24000000000000076F
+t1298853156
+s1903
 
 N/Users/billy_connolly/Documents/PromChecklist/build/PromChecklist.build/Debug-iphonesimulator/PromChecklist.build/Objects-normal/i386/PromChecklistAppDelegate.o
 t1298690573
 s61540
 
 N/Users/billy_connolly/Documents/PromChecklist/build/PromChecklist.build/Debug-iphonesimulator/PromChecklist.build/Objects-normal/i386/RemindMeViewController.o
-t1298758105
+t1298869362
 s60284
 
 N/Users/billy_connolly/Documents/PromChecklist/build/PromChecklist.build/Debug-iphonesimulator/PromChecklist.build/Objects-normal/i386/SplashScreenViewController.o
-t1298693733
+t1298866645
 s47480
 
 N/Users/billy_connolly/Documents/PromChecklist/build/PromChecklist.build/Debug-iphonesimulator/PromChecklist.build/Objects-normal/i386/TableViewCell.o
-t1298758105
-s61792
+t1298869362
+s62044
 
 N/Users/billy_connolly/Documents/PromChecklist/build/PromChecklist.build/Debug-iphonesimulator/PromChecklist.build/Objects-normal/i386/main.o
 t1298684512
@@ -427,11 +457,24 @@ s909
 
 CCheck dependencies
 r0
-lSLF07#2@18"Check dependencies320523141#320523141#0(0"0(0#1#0"8613472640#0"0#
+lSLF07#2@18"Check dependencies320562423#320562423#0(0"0(0#1#0"8617253952#0"0#
+
+CCompileC build/PromChecklist.build/Debug-iphonesimulator/PromChecklist.build/Objects-normal/i386/AddNewDetailedViewController.o /Users/billy_connolly/Documents/PromChecklist/AddNewDetailedViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s320562370.747974
+e320562370.862175
+r1
+xCompileC
+xbuild/PromChecklist.build/Debug-iphonesimulator/PromChecklist.build/Objects-normal/i386/AddNewDetailedViewController.o
+x/Users/billy_connolly/Documents/PromChecklist/AddNewDetailedViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@84"Compile /Users/billy_connolly/Documents/PromChecklist/AddNewDetailedViewController.m320562370#320562370#0(0"0(0#0#76"/Users/billy_connolly/Documents/PromChecklist/AddNewDetailedViewController.m8617514272#2141"    cd /Users/billy_connolly/Documents/PromChecklist    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/billy_connolly/Documents/PromChecklist/build/PromChecklist.build/Debug-iphonesimulator/PromChecklist.build/PromChecklist-generated-files.hmap -I/Users/billy_connolly/Documents/PromChecklist/build/PromChecklist.build/Debug-iphonesimulator/PromChecklist.build/PromChecklist-own-target-headers.hmap -I/Users/billy_connolly/Documents/PromChecklist/build/PromChecklist.build/Debug-iphonesimulator/PromChecklist.build/PromChecklist-all-target-headers.hmap -iquote /Users/billy_connolly/Documents/PromChecklist/build/PromChecklist.build/Debug-iphonesimulator/PromChecklist.build/PromChecklist-project-headers.hmap -F/Users/billy_connolly/Documents/PromChecklist/build/Debug-iphonesimulator -I/Users/billy_connolly/Documents/PromChecklist/build/Debug-iphonesimulator/include -I/Users/billy_connolly/Documents/PromChecklist/build/PromChecklist.build/Debug-iphonesimulator/PromChecklist.build/DerivedSources/i386 -I/Users/billy_connolly/Documents/PromChecklist/build/PromChecklist.build/Debug-iphonesimulator/PromChecklist.build/DerivedSources -include /var/folders/XV/XVklkd+3Eyi9KQgq0ucWa++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/PromChecklist_Prefix-cdferppcykbbfegonjrzyzintbrl/PromChecklist_Prefix.pch -c /Users/billy_connolly/Documents/PromChecklist/AddNewDetailedViewController.m -o /Users/billy_connolly/Documents/PromChecklist/build/PromChecklist.build/Debug-iphonesimulator/PromChecklist.build/Objects-normal/i386/AddNewDetailedViewController.o0#
 
 CCompileC build/PromChecklist.build/Debug-iphonesimulator/PromChecklist.build/Objects-normal/i386/AddNewViewController.o /Users/billy_connolly/Documents/PromChecklist/AddNewViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s320523141.742442
-e320523141.817860
+s320562256.911439
+e320562257.002304
 r1
 xCompileC
 xbuild/PromChecklist.build/Debug-iphonesimulator/PromChecklist.build/Objects-normal/i386/AddNewViewController.o
@@ -440,13 +483,11 @@ xnormal
 xi386
 xobjective-c
 xcom.apple.compilers.gcc.4_2
-o/Users/billy_connolly/Documents/PromChecklist/AddNewViewController.m:75: warning: property 'doneEdit' requires method '-doneEdit' to be defined - use @synthesize, @dynamic or provide a method implementation
-o/Users/billy_connolly/Documents/PromChecklist/AddNewViewController.m:75: warning: property 'doneEdit' requires the method 'setDoneEdit:' to be defined - use @synthesize, @dynamic or provide a method implementation
-lSLF07#2@76"Compile /Users/billy_connolly/Documents/PromChecklist/AddNewViewController.m320523141#320523141#0(421"/Users/billy_connolly/Documents/PromChecklist/AddNewViewController.m:75: warning: property 'doneEdit' requires method '-doneEdit' to be defined - use @synthesize, @dynamic or provide a method implementation/Users/billy_connolly/Documents/PromChecklist/AddNewViewController.m:75: warning: property 'doneEdit' requires the method 'setDoneEdit:' to be defined - use @synthesize, @dynamic or provide a method implementation2(22@124"Property 'doneEdit' requires method '-doneEdit' to be defined - use @synthesize, @dynamic or provide a method implementation320523141#0#207#0(6@68"/Users/billy_connolly/Documents/PromChecklist/AddNewViewController.m320523128#75#0#75#0#0"0(22@131"Property 'doneEdit' requires the method 'setDoneEdit:' to be defined - use @synthesize, @dynamic or provide a method implementation320523141#207#214#0(6@68"/Users/billy_connolly/Documents/PromChecklist/AddNewViewController.m320523128#75#0#75#0#0"0(0#0#68"/Users/billy_connolly/Documents/PromChecklist/AddNewViewController.m8614767072#2125"    cd /Users/billy_connolly/Documents/PromChecklist    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/billy_connolly/Documents/PromChecklist/build/PromChecklist.build/Debug-iphonesimulator/PromChecklist.build/PromChecklist-generated-files.hmap -I/Users/billy_connolly/Documents/PromChecklist/build/PromChecklist.build/Debug-iphonesimulator/PromChecklist.build/PromChecklist-own-target-headers.hmap -I/Users/billy_connolly/Documents/PromChecklist/build/PromChecklist.build/Debug-iphonesimulator/PromChecklist.build/PromChecklist-all-target-headers.hmap -iquote /Users/billy_connolly/Documents/PromChecklist/build/PromChecklist.build/Debug-iphonesimulator/PromChecklist.build/PromChecklist-project-headers.hmap -F/Users/billy_connolly/Documents/PromChecklist/build/Debug-iphonesimulator -I/Users/billy_connolly/Documents/PromChecklist/build/Debug-iphonesimulator/include -I/Users/billy_connolly/Documents/PromChecklist/build/PromChecklist.build/Debug-iphonesimulator/PromChecklist.build/DerivedSources/i386 -I/Users/billy_connolly/Documents/PromChecklist/build/PromChecklist.build/Debug-iphonesimulator/PromChecklist.build/DerivedSources -include /var/folders/XV/XVklkd+3Eyi9KQgq0ucWa++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/PromChecklist_Prefix-cdferppcykbbfegonjrzyzintbrl/PromChecklist_Prefix.pch -c /Users/billy_connolly/Documents/PromChecklist/AddNewViewController.m -o /Users/billy_connolly/Documents/PromChecklist/build/PromChecklist.build/Debug-iphonesimulator/PromChecklist.build/Objects-normal/i386/AddNewViewController.o0#
+lSLF07#2@76"Compile /Users/billy_connolly/Documents/PromChecklist/AddNewViewController.m320562256#320562257#0(0"0(0#0#68"/Users/billy_connolly/Documents/PromChecklist/AddNewViewController.m8615179680#2125"    cd /Users/billy_connolly/Documents/PromChecklist    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/billy_connolly/Documents/PromChecklist/build/PromChecklist.build/Debug-iphonesimulator/PromChecklist.build/PromChecklist-generated-files.hmap -I/Users/billy_connolly/Documents/PromChecklist/build/PromChecklist.build/Debug-iphonesimulator/PromChecklist.build/PromChecklist-own-target-headers.hmap -I/Users/billy_connolly/Documents/PromChecklist/build/PromChecklist.build/Debug-iphonesimulator/PromChecklist.build/PromChecklist-all-target-headers.hmap -iquote /Users/billy_connolly/Documents/PromChecklist/build/PromChecklist.build/Debug-iphonesimulator/PromChecklist.build/PromChecklist-project-headers.hmap -F/Users/billy_connolly/Documents/PromChecklist/build/Debug-iphonesimulator -I/Users/billy_connolly/Documents/PromChecklist/build/Debug-iphonesimulator/include -I/Users/billy_connolly/Documents/PromChecklist/build/PromChecklist.build/Debug-iphonesimulator/PromChecklist.build/DerivedSources/i386 -I/Users/billy_connolly/Documents/PromChecklist/build/PromChecklist.build/Debug-iphonesimulator/PromChecklist.build/DerivedSources -include /var/folders/XV/XVklkd+3Eyi9KQgq0ucWa++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/PromChecklist_Prefix-cdferppcykbbfegonjrzyzintbrl/PromChecklist_Prefix.pch -c /Users/billy_connolly/Documents/PromChecklist/AddNewViewController.m -o /Users/billy_connolly/Documents/PromChecklist/build/PromChecklist.build/Debug-iphonesimulator/PromChecklist.build/Objects-normal/i386/AddNewViewController.o0#
 
 CCompileC build/PromChecklist.build/Debug-iphonesimulator/PromChecklist.build/Objects-normal/i386/ChecklistDetailedViewController.o /Users/billy_connolly/Documents/PromChecklist/ChecklistDetailedViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s320450905.543426
-e320450905.652826
+s320562162.152231
+e320562162.285380
 r1
 xCompileC
 xbuild/PromChecklist.build/Debug-iphonesimulator/PromChecklist.build/Objects-normal/i386/ChecklistDetailedViewController.o
@@ -455,11 +496,11 @@ xnormal
 xi386
 xobjective-c
 xcom.apple.compilers.gcc.4_2
-lSLF07#2@87"Compile /Users/billy_connolly/Documents/PromChecklist/ChecklistDetailedViewController.m320450905#320450905#0(0"0(0#0#79"/Users/billy_connolly/Documents/PromChecklist/ChecklistDetailedViewController.m8625892320#2147"    cd /Users/billy_connolly/Documents/PromChecklist    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/billy_connolly/Documents/PromChecklist/build/PromChecklist.build/Debug-iphonesimulator/PromChecklist.build/PromChecklist-generated-files.hmap -I/Users/billy_connolly/Documents/PromChecklist/build/PromChecklist.build/Debug-iphonesimulator/PromChecklist.build/PromChecklist-own-target-headers.hmap -I/Users/billy_connolly/Documents/PromChecklist/build/PromChecklist.build/Debug-iphonesimulator/PromChecklist.build/PromChecklist-all-target-headers.hmap -iquote /Users/billy_connolly/Documents/PromChecklist/build/PromChecklist.build/Debug-iphonesimulator/PromChecklist.build/PromChecklist-project-headers.hmap -F/Users/billy_connolly/Documents/PromChecklist/build/Debug-iphonesimulator -I/Users/billy_connolly/Documents/PromChecklist/build/Debug-iphonesimulator/include -I/Users/billy_connolly/Documents/PromChecklist/build/PromChecklist.build/Debug-iphonesimulator/PromChecklist.build/DerivedSources/i386 -I/Users/billy_connolly/Documents/PromChecklist/build/PromChecklist.build/Debug-iphonesimulator/PromChecklist.build/DerivedSources -include /var/folders/XV/XVklkd+3Eyi9KQgq0ucWa++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/PromChecklist_Prefix-cdferppcykbbfegonjrzyzintbrl/PromChecklist_Prefix.pch -c /Users/billy_connolly/Documents/PromChecklist/ChecklistDetailedViewController.m -o /Users/billy_connolly/Documents/PromChecklist/build/PromChecklist.build/Debug-iphonesimulator/PromChecklist.build/Objects-normal/i386/ChecklistDetailedViewController.o0#
+lSLF07#2@87"Compile /Users/billy_connolly/Documents/PromChecklist/ChecklistDetailedViewController.m320562162#320562162#0(0"0(0#0#79"/Users/billy_connolly/Documents/PromChecklist/ChecklistDetailedViewController.m8612101632#2147"    cd /Users/billy_connolly/Documents/PromChecklist    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/billy_connolly/Documents/PromChecklist/build/PromChecklist.build/Debug-iphonesimulator/PromChecklist.build/PromChecklist-generated-files.hmap -I/Users/billy_connolly/Documents/PromChecklist/build/PromChecklist.build/Debug-iphonesimulator/PromChecklist.build/PromChecklist-own-target-headers.hmap -I/Users/billy_connolly/Documents/PromChecklist/build/PromChecklist.build/Debug-iphonesimulator/PromChecklist.build/PromChecklist-all-target-headers.hmap -iquote /Users/billy_connolly/Documents/PromChecklist/build/PromChecklist.build/Debug-iphonesimulator/PromChecklist.build/PromChecklist-project-headers.hmap -F/Users/billy_connolly/Documents/PromChecklist/build/Debug-iphonesimulator -I/Users/billy_connolly/Documents/PromChecklist/build/Debug-iphonesimulator/include -I/Users/billy_connolly/Documents/PromChecklist/build/PromChecklist.build/Debug-iphonesimulator/PromChecklist.build/DerivedSources/i386 -I/Users/billy_connolly/Documents/PromChecklist/build/PromChecklist.build/Debug-iphonesimulator/PromChecklist.build/DerivedSources -include /var/folders/XV/XVklkd+3Eyi9KQgq0ucWa++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/PromChecklist_Prefix-cdferppcykbbfegonjrzyzintbrl/PromChecklist_Prefix.pch -c /Users/billy_connolly/Documents/PromChecklist/ChecklistDetailedViewController.m -o /Users/billy_connolly/Documents/PromChecklist/build/PromChecklist.build/Debug-iphonesimulator/PromChecklist.build/Objects-normal/i386/ChecklistDetailedViewController.o0#
 
 CCompileC build/PromChecklist.build/Debug-iphonesimulator/PromChecklist.build/Objects-normal/i386/ChecklistViewController.o /Users/billy_connolly/Documents/PromChecklist/ChecklistViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s320523107.840955
-e320523107.952392
+s320562423.333453
+e320562423.435499
 r1
 xCompileC
 xbuild/PromChecklist.build/Debug-iphonesimulator/PromChecklist.build/Objects-normal/i386/ChecklistViewController.o
@@ -468,7 +509,7 @@ xnormal
 xi386
 xobjective-c
 xcom.apple.compilers.gcc.4_2
-lSLF07#2@79"Compile /Users/billy_connolly/Documents/PromChecklist/ChecklistViewController.m320523107#320523107#0(0"0(0#0#71"/Users/billy_connolly/Documents/PromChecklist/ChecklistViewController.m8612948384#2131"    cd /Users/billy_connolly/Documents/PromChecklist    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/billy_connolly/Documents/PromChecklist/build/PromChecklist.build/Debug-iphonesimulator/PromChecklist.build/PromChecklist-generated-files.hmap -I/Users/billy_connolly/Documents/PromChecklist/build/PromChecklist.build/Debug-iphonesimulator/PromChecklist.build/PromChecklist-own-target-headers.hmap -I/Users/billy_connolly/Documents/PromChecklist/build/PromChecklist.build/Debug-iphonesimulator/PromChecklist.build/PromChecklist-all-target-headers.hmap -iquote /Users/billy_connolly/Documents/PromChecklist/build/PromChecklist.build/Debug-iphonesimulator/PromChecklist.build/PromChecklist-project-headers.hmap -F/Users/billy_connolly/Documents/PromChecklist/build/Debug-iphonesimulator -I/Users/billy_connolly/Documents/PromChecklist/build/Debug-iphonesimulator/include -I/Users/billy_connolly/Documents/PromChecklist/build/PromChecklist.build/Debug-iphonesimulator/PromChecklist.build/DerivedSources/i386 -I/Users/billy_connolly/Documents/PromChecklist/build/PromChecklist.build/Debug-iphonesimulator/PromChecklist.build/DerivedSources -include /var/folders/XV/XVklkd+3Eyi9KQgq0ucWa++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/PromChecklist_Prefix-cdferppcykbbfegonjrzyzintbrl/PromChecklist_Prefix.pch -c /Users/billy_connolly/Documents/PromChecklist/ChecklistViewController.m -o /Users/billy_connolly/Documents/PromChecklist/build/PromChecklist.build/Debug-iphonesimulator/PromChecklist.build/Objects-normal/i386/ChecklistViewController.o0#
+lSLF07#2@79"Compile /Users/billy_connolly/Documents/PromChecklist/ChecklistViewController.m320562423#320562423#0(0"0(0#0#71"/Users/billy_connolly/Documents/PromChecklist/ChecklistViewController.m8612476896#2131"    cd /Users/billy_connolly/Documents/PromChecklist    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/billy_connolly/Documents/PromChecklist/build/PromChecklist.build/Debug-iphonesimulator/PromChecklist.build/PromChecklist-generated-files.hmap -I/Users/billy_connolly/Documents/PromChecklist/build/PromChecklist.build/Debug-iphonesimulator/PromChecklist.build/PromChecklist-own-target-headers.hmap -I/Users/billy_connolly/Documents/PromChecklist/build/PromChecklist.build/Debug-iphonesimulator/PromChecklist.build/PromChecklist-all-target-headers.hmap -iquote /Users/billy_connolly/Documents/PromChecklist/build/PromChecklist.build/Debug-iphonesimulator/PromChecklist.build/PromChecklist-project-headers.hmap -F/Users/billy_connolly/Documents/PromChecklist/build/Debug-iphonesimulator -I/Users/billy_connolly/Documents/PromChecklist/build/Debug-iphonesimulator/include -I/Users/billy_connolly/Documents/PromChecklist/build/PromChecklist.build/Debug-iphonesimulator/PromChecklist.build/DerivedSources/i386 -I/Users/billy_connolly/Documents/PromChecklist/build/PromChecklist.build/Debug-iphonesimulator/PromChecklist.build/DerivedSources -include /var/folders/XV/XVklkd+3Eyi9KQgq0ucWa++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/PromChecklist_Prefix-cdferppcykbbfegonjrzyzintbrl/PromChecklist_Prefix.pch -c /Users/billy_connolly/Documents/PromChecklist/ChecklistViewController.m -o /Users/billy_connolly/Documents/PromChecklist/build/PromChecklist.build/Debug-iphonesimulator/PromChecklist.build/Objects-normal/i386/ChecklistViewController.o0#
 
 CCompileC build/PromChecklist.build/Debug-iphonesimulator/PromChecklist.build/Objects-normal/i386/InitialLoadViewController.o /Users/billy_connolly/Documents/PromChecklist/InitialLoadViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
 s320447754.490309
@@ -484,8 +525,8 @@ xcom.apple.compilers.gcc.4_2
 lSLF07#2@81"Compile /Users/billy_connolly/Documents/PromChecklist/InitialLoadViewController.m320447754#320447754#0(0"0(0#0#73"/Users/billy_connolly/Documents/PromChecklist/InitialLoadViewController.m8616389632#2135"    cd /Users/billy_connolly/Documents/PromChecklist    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/billy_connolly/Documents/PromChecklist/build/PromChecklist.build/Debug-iphonesimulator/PromChecklist.build/PromChecklist-generated-files.hmap -I/Users/billy_connolly/Documents/PromChecklist/build/PromChecklist.build/Debug-iphonesimulator/PromChecklist.build/PromChecklist-own-target-headers.hmap -I/Users/billy_connolly/Documents/PromChecklist/build/PromChecklist.build/Debug-iphonesimulator/PromChecklist.build/PromChecklist-all-target-headers.hmap -iquote /Users/billy_connolly/Documents/PromChecklist/build/PromChecklist.build/Debug-iphonesimulator/PromChecklist.build/PromChecklist-project-headers.hmap -F/Users/billy_connolly/Documents/PromChecklist/build/Debug-iphonesimulator -I/Users/billy_connolly/Documents/PromChecklist/build/Debug-iphonesimulator/include -I/Users/billy_connolly/Documents/PromChecklist/build/PromChecklist.build/Debug-iphonesimulator/PromChecklist.build/DerivedSources/i386 -I/Users/billy_connolly/Documents/PromChecklist/build/PromChecklist.build/Debug-iphonesimulator/PromChecklist.build/DerivedSources -include /var/folders/XV/XVklkd+3Eyi9KQgq0ucWa++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/PromChecklist_Prefix-cdferppcykbbfegonjrzyzintbrl/PromChecklist_Prefix.pch -c /Users/billy_connolly/Documents/PromChecklist/InitialLoadViewController.m -o /Users/billy_connolly/Documents/PromChecklist/build/PromChecklist.build/Debug-iphonesimulator/PromChecklist.build/Objects-normal/i386/InitialLoadViewController.o0#
 
 CCompileC build/PromChecklist.build/Debug-iphonesimulator/PromChecklist.build/Objects-normal/i386/MainMenuViewController.o /Users/billy_connolly/Documents/PromChecklist/MainMenuViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s320450905.355833
-e320450905.460390
+s320562162.031163
+e320562162.107598
 r1
 xCompileC
 xbuild/PromChecklist.build/Debug-iphonesimulator/PromChecklist.build/Objects-normal/i386/MainMenuViewController.o
@@ -494,7 +535,7 @@ xnormal
 xi386
 xobjective-c
 xcom.apple.compilers.gcc.4_2
-lSLF07#2@78"Compile /Users/billy_connolly/Documents/PromChecklist/MainMenuViewController.m320450905#320450905#0(0"0(0#0#70"/Users/billy_connolly/Documents/PromChecklist/MainMenuViewController.m8627171968#2129"    cd /Users/billy_connolly/Documents/PromChecklist    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/billy_connolly/Documents/PromChecklist/build/PromChecklist.build/Debug-iphonesimulator/PromChecklist.build/PromChecklist-generated-files.hmap -I/Users/billy_connolly/Documents/PromChecklist/build/PromChecklist.build/Debug-iphonesimulator/PromChecklist.build/PromChecklist-own-target-headers.hmap -I/Users/billy_connolly/Documents/PromChecklist/build/PromChecklist.build/Debug-iphonesimulator/PromChecklist.build/PromChecklist-all-target-headers.hmap -iquote /Users/billy_connolly/Documents/PromChecklist/build/PromChecklist.build/Debug-iphonesimulator/PromChecklist.build/PromChecklist-project-headers.hmap -F/Users/billy_connolly/Documents/PromChecklist/build/Debug-iphonesimulator -I/Users/billy_connolly/Documents/PromChecklist/build/Debug-iphonesimulator/include -I/Users/billy_connolly/Documents/PromChecklist/build/PromChecklist.build/Debug-iphonesimulator/PromChecklist.build/DerivedSources/i386 -I/Users/billy_connolly/Documents/PromChecklist/build/PromChecklist.build/Debug-iphonesimulator/PromChecklist.build/DerivedSources -include /var/folders/XV/XVklkd+3Eyi9KQgq0ucWa++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/PromChecklist_Prefix-cdferppcykbbfegonjrzyzintbrl/PromChecklist_Prefix.pch -c /Users/billy_connolly/Documents/PromChecklist/MainMenuViewController.m -o /Users/billy_connolly/Documents/PromChecklist/build/PromChecklist.build/Debug-iphonesimulator/PromChecklist.build/Objects-normal/i386/MainMenuViewController.o0#
+lSLF07#2@78"Compile /Users/billy_connolly/Documents/PromChecklist/MainMenuViewController.m320562162#320562162#0(0"0(0#0#70"/Users/billy_connolly/Documents/PromChecklist/MainMenuViewController.m8614024160#2129"    cd /Users/billy_connolly/Documents/PromChecklist    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/billy_connolly/Documents/PromChecklist/build/PromChecklist.build/Debug-iphonesimulator/PromChecklist.build/PromChecklist-generated-files.hmap -I/Users/billy_connolly/Documents/PromChecklist/build/PromChecklist.build/Debug-iphonesimulator/PromChecklist.build/PromChecklist-own-target-headers.hmap -I/Users/billy_connolly/Documents/PromChecklist/build/PromChecklist.build/Debug-iphonesimulator/PromChecklist.build/PromChecklist-all-target-headers.hmap -iquote /Users/billy_connolly/Documents/PromChecklist/build/PromChecklist.build/Debug-iphonesimulator/PromChecklist.build/PromChecklist-project-headers.hmap -F/Users/billy_connolly/Documents/PromChecklist/build/Debug-iphonesimulator -I/Users/billy_connolly/Documents/PromChecklist/build/Debug-iphonesimulator/include -I/Users/billy_connolly/Documents/PromChecklist/build/PromChecklist.build/Debug-iphonesimulator/PromChecklist.build/DerivedSources/i386 -I/Users/billy_connolly/Documents/PromChecklist/build/PromChecklist.build/Debug-iphonesimulator/PromChecklist.build/DerivedSources -include /var/folders/XV/XVklkd+3Eyi9KQgq0ucWa++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/PromChecklist_Prefix-cdferppcykbbfegonjrzyzintbrl/PromChecklist_Prefix.pch -c /Users/billy_connolly/Documents/PromChecklist/MainMenuViewController.m -o /Users/billy_connolly/Documents/PromChecklist/build/PromChecklist.build/Debug-iphonesimulator/PromChecklist.build/Objects-normal/i386/MainMenuViewController.o0#
 
 CCompileC build/PromChecklist.build/Debug-iphonesimulator/PromChecklist.build/Objects-normal/i386/OptionsViewController.o /Users/billy_connolly/Documents/PromChecklist/OptionsViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
 s320377312.760739
@@ -523,8 +564,8 @@ xcom.apple.compilers.gcc.4_2
 lSLF07#2@88"Compile /Users/billy_connolly/Documents/PromChecklist/Classes/PromChecklistAppDelegate.m320383373#320383373#0(0"0(0#0#80"/Users/billy_connolly/Documents/PromChecklist/Classes/PromChecklistAppDelegate.m3347427319670858752#2141"    cd /Users/billy_connolly/Documents/PromChecklist    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/billy_connolly/Documents/PromChecklist/build/PromChecklist.build/Debug-iphonesimulator/PromChecklist.build/PromChecklist-generated-files.hmap -I/Users/billy_connolly/Documents/PromChecklist/build/PromChecklist.build/Debug-iphonesimulator/PromChecklist.build/PromChecklist-own-target-headers.hmap -I/Users/billy_connolly/Documents/PromChecklist/build/PromChecklist.build/Debug-iphonesimulator/PromChecklist.build/PromChecklist-all-target-headers.hmap -iquote /Users/billy_connolly/Documents/PromChecklist/build/PromChecklist.build/Debug-iphonesimulator/PromChecklist.build/PromChecklist-project-headers.hmap -F/Users/billy_connolly/Documents/PromChecklist/build/Debug-iphonesimulator -I/Users/billy_connolly/Documents/PromChecklist/build/Debug-iphonesimulator/include -I/Users/billy_connolly/Documents/PromChecklist/build/PromChecklist.build/Debug-iphonesimulator/PromChecklist.build/DerivedSources/i386 -I/Users/billy_connolly/Documents/PromChecklist/build/PromChecklist.build/Debug-iphonesimulator/PromChecklist.build/DerivedSources -include /var/folders/XV/XVklkd+3Eyi9KQgq0ucWa++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/PromChecklist_Prefix-cdferppcykbbfegonjrzyzintbrl/PromChecklist_Prefix.pch -c /Users/billy_connolly/Documents/PromChecklist/Classes/PromChecklistAppDelegate.m -o /Users/billy_connolly/Documents/PromChecklist/build/PromChecklist.build/Debug-iphonesimulator/PromChecklist.build/Objects-normal/i386/PromChecklistAppDelegate.o0#
 
 CCompileC build/PromChecklist.build/Debug-iphonesimulator/PromChecklist.build/Objects-normal/i386/RemindMeViewController.o /Users/billy_connolly/Documents/PromChecklist/RemindMeViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s320450905.652929
-e320450905.734596
+s320562162.240899
+e320562162.337815
 r1
 xCompileC
 xbuild/PromChecklist.build/Debug-iphonesimulator/PromChecklist.build/Objects-normal/i386/RemindMeViewController.o
@@ -533,11 +574,11 @@ xnormal
 xi386
 xobjective-c
 xcom.apple.compilers.gcc.4_2
-lSLF07#2@78"Compile /Users/billy_connolly/Documents/PromChecklist/RemindMeViewController.m320450905#320450905#0(0"0(0#0#70"/Users/billy_connolly/Documents/PromChecklist/RemindMeViewController.m8625581984#2129"    cd /Users/billy_connolly/Documents/PromChecklist    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/billy_connolly/Documents/PromChecklist/build/PromChecklist.build/Debug-iphonesimulator/PromChecklist.build/PromChecklist-generated-files.hmap -I/Users/billy_connolly/Documents/PromChecklist/build/PromChecklist.build/Debug-iphonesimulator/PromChecklist.build/PromChecklist-own-target-headers.hmap -I/Users/billy_connolly/Documents/PromChecklist/build/PromChecklist.build/Debug-iphonesimulator/PromChecklist.build/PromChecklist-all-target-headers.hmap -iquote /Users/billy_connolly/Documents/PromChecklist/build/PromChecklist.build/Debug-iphonesimulator/PromChecklist.build/PromChecklist-project-headers.hmap -F/Users/billy_connolly/Documents/PromChecklist/build/Debug-iphonesimulator -I/Users/billy_connolly/Documents/PromChecklist/build/Debug-iphonesimulator/include -I/Users/billy_connolly/Documents/PromChecklist/build/PromChecklist.build/Debug-iphonesimulator/PromChecklist.build/DerivedSources/i386 -I/Users/billy_connolly/Documents/PromChecklist/build/PromChecklist.build/Debug-iphonesimulator/PromChecklist.build/DerivedSources -include /var/folders/XV/XVklkd+3Eyi9KQgq0ucWa++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/PromChecklist_Prefix-cdferppcykbbfegonjrzyzintbrl/PromChecklist_Prefix.pch -c /Users/billy_connolly/Documents/PromChecklist/RemindMeViewController.m -o /Users/billy_connolly/Documents/PromChecklist/build/PromChecklist.build/Debug-iphonesimulator/PromChecklist.build/Objects-normal/i386/RemindMeViewController.o0#
+lSLF07#2@78"Compile /Users/billy_connolly/Documents/PromChecklist/RemindMeViewController.m320562162#320562162#0(0"0(0#0#70"/Users/billy_connolly/Documents/PromChecklist/RemindMeViewController.m8617060256#2129"    cd /Users/billy_connolly/Documents/PromChecklist    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/billy_connolly/Documents/PromChecklist/build/PromChecklist.build/Debug-iphonesimulator/PromChecklist.build/PromChecklist-generated-files.hmap -I/Users/billy_connolly/Documents/PromChecklist/build/PromChecklist.build/Debug-iphonesimulator/PromChecklist.build/PromChecklist-own-target-headers.hmap -I/Users/billy_connolly/Documents/PromChecklist/build/PromChecklist.build/Debug-iphonesimulator/PromChecklist.build/PromChecklist-all-target-headers.hmap -iquote /Users/billy_connolly/Documents/PromChecklist/build/PromChecklist.build/Debug-iphonesimulator/PromChecklist.build/PromChecklist-project-headers.hmap -F/Users/billy_connolly/Documents/PromChecklist/build/Debug-iphonesimulator -I/Users/billy_connolly/Documents/PromChecklist/build/Debug-iphonesimulator/include -I/Users/billy_connolly/Documents/PromChecklist/build/PromChecklist.build/Debug-iphonesimulator/PromChecklist.build/DerivedSources/i386 -I/Users/billy_connolly/Documents/PromChecklist/build/PromChecklist.build/Debug-iphonesimulator/PromChecklist.build/DerivedSources -include /var/folders/XV/XVklkd+3Eyi9KQgq0ucWa++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/PromChecklist_Prefix-cdferppcykbbfegonjrzyzintbrl/PromChecklist_Prefix.pch -c /Users/billy_connolly/Documents/PromChecklist/RemindMeViewController.m -o /Users/billy_connolly/Documents/PromChecklist/build/PromChecklist.build/Debug-iphonesimulator/PromChecklist.build/Objects-normal/i386/RemindMeViewController.o0#
 
 CCompileC build/PromChecklist.build/Debug-iphonesimulator/PromChecklist.build/Objects-normal/i386/SplashScreenViewController.o /Users/billy_connolly/Documents/PromChecklist/Classes/SplashScreenViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s320386533.307914
-e320386533.378666
+s320559445.641592
+e320559445.712484
 r1
 xCompileC
 xbuild/PromChecklist.build/Debug-iphonesimulator/PromChecklist.build/Objects-normal/i386/SplashScreenViewController.o
@@ -546,11 +587,11 @@ xnormal
 xi386
 xobjective-c
 xcom.apple.compilers.gcc.4_2
-lSLF07#2@90"Compile /Users/billy_connolly/Documents/PromChecklist/Classes/SplashScreenViewController.m320386533#320386533#0(0"0(0#0#82"/Users/billy_connolly/Documents/PromChecklist/Classes/SplashScreenViewController.m8612989664#2145"    cd /Users/billy_connolly/Documents/PromChecklist    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/billy_connolly/Documents/PromChecklist/build/PromChecklist.build/Debug-iphonesimulator/PromChecklist.build/PromChecklist-generated-files.hmap -I/Users/billy_connolly/Documents/PromChecklist/build/PromChecklist.build/Debug-iphonesimulator/PromChecklist.build/PromChecklist-own-target-headers.hmap -I/Users/billy_connolly/Documents/PromChecklist/build/PromChecklist.build/Debug-iphonesimulator/PromChecklist.build/PromChecklist-all-target-headers.hmap -iquote /Users/billy_connolly/Documents/PromChecklist/build/PromChecklist.build/Debug-iphonesimulator/PromChecklist.build/PromChecklist-project-headers.hmap -F/Users/billy_connolly/Documents/PromChecklist/build/Debug-iphonesimulator -I/Users/billy_connolly/Documents/PromChecklist/build/Debug-iphonesimulator/include -I/Users/billy_connolly/Documents/PromChecklist/build/PromChecklist.build/Debug-iphonesimulator/PromChecklist.build/DerivedSources/i386 -I/Users/billy_connolly/Documents/PromChecklist/build/PromChecklist.build/Debug-iphonesimulator/PromChecklist.build/DerivedSources -include /var/folders/XV/XVklkd+3Eyi9KQgq0ucWa++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/PromChecklist_Prefix-cdferppcykbbfegonjrzyzintbrl/PromChecklist_Prefix.pch -c /Users/billy_connolly/Documents/PromChecklist/Classes/SplashScreenViewController.m -o /Users/billy_connolly/Documents/PromChecklist/build/PromChecklist.build/Debug-iphonesimulator/PromChecklist.build/Objects-normal/i386/SplashScreenViewController.o0#
+lSLF07#2@90"Compile /Users/billy_connolly/Documents/PromChecklist/Classes/SplashScreenViewController.m320559445#320559445#0(0"0(0#0#82"/Users/billy_connolly/Documents/PromChecklist/Classes/SplashScreenViewController.m8613852288#2145"    cd /Users/billy_connolly/Documents/PromChecklist    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/billy_connolly/Documents/PromChecklist/build/PromChecklist.build/Debug-iphonesimulator/PromChecklist.build/PromChecklist-generated-files.hmap -I/Users/billy_connolly/Documents/PromChecklist/build/PromChecklist.build/Debug-iphonesimulator/PromChecklist.build/PromChecklist-own-target-headers.hmap -I/Users/billy_connolly/Documents/PromChecklist/build/PromChecklist.build/Debug-iphonesimulator/PromChecklist.build/PromChecklist-all-target-headers.hmap -iquote /Users/billy_connolly/Documents/PromChecklist/build/PromChecklist.build/Debug-iphonesimulator/PromChecklist.build/PromChecklist-project-headers.hmap -F/Users/billy_connolly/Documents/PromChecklist/build/Debug-iphonesimulator -I/Users/billy_connolly/Documents/PromChecklist/build/Debug-iphonesimulator/include -I/Users/billy_connolly/Documents/PromChecklist/build/PromChecklist.build/Debug-iphonesimulator/PromChecklist.build/DerivedSources/i386 -I/Users/billy_connolly/Documents/PromChecklist/build/PromChecklist.build/Debug-iphonesimulator/PromChecklist.build/DerivedSources -include /var/folders/XV/XVklkd+3Eyi9KQgq0ucWa++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/PromChecklist_Prefix-cdferppcykbbfegonjrzyzintbrl/PromChecklist_Prefix.pch -c /Users/billy_connolly/Documents/PromChecklist/Classes/SplashScreenViewController.m -o /Users/billy_connolly/Documents/PromChecklist/build/PromChecklist.build/Debug-iphonesimulator/PromChecklist.build/Objects-normal/i386/SplashScreenViewController.o0#
 
 CCompileC build/PromChecklist.build/Debug-iphonesimulator/PromChecklist.build/Objects-normal/i386/TableViewCell.o /Users/billy_connolly/Documents/PromChecklist/TableViewCell.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s320450905.357270
-e320450905.543333
+s320562162.032341
+e320562162.152107
 r1
 xCompileC
 xbuild/PromChecklist.build/Debug-iphonesimulator/PromChecklist.build/Objects-normal/i386/TableViewCell.o
@@ -559,7 +600,7 @@ xnormal
 xi386
 xobjective-c
 xcom.apple.compilers.gcc.4_2
-lSLF07#2@69"Compile /Users/billy_connolly/Documents/PromChecklist/TableViewCell.m320450905#320450905#0(0"0(0#0#61"/Users/billy_connolly/Documents/PromChecklist/TableViewCell.m8625568928#2111"    cd /Users/billy_connolly/Documents/PromChecklist    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/billy_connolly/Documents/PromChecklist/build/PromChecklist.build/Debug-iphonesimulator/PromChecklist.build/PromChecklist-generated-files.hmap -I/Users/billy_connolly/Documents/PromChecklist/build/PromChecklist.build/Debug-iphonesimulator/PromChecklist.build/PromChecklist-own-target-headers.hmap -I/Users/billy_connolly/Documents/PromChecklist/build/PromChecklist.build/Debug-iphonesimulator/PromChecklist.build/PromChecklist-all-target-headers.hmap -iquote /Users/billy_connolly/Documents/PromChecklist/build/PromChecklist.build/Debug-iphonesimulator/PromChecklist.build/PromChecklist-project-headers.hmap -F/Users/billy_connolly/Documents/PromChecklist/build/Debug-iphonesimulator -I/Users/billy_connolly/Documents/PromChecklist/build/Debug-iphonesimulator/include -I/Users/billy_connolly/Documents/PromChecklist/build/PromChecklist.build/Debug-iphonesimulator/PromChecklist.build/DerivedSources/i386 -I/Users/billy_connolly/Documents/PromChecklist/build/PromChecklist.build/Debug-iphonesimulator/PromChecklist.build/DerivedSources -include /var/folders/XV/XVklkd+3Eyi9KQgq0ucWa++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/PromChecklist_Prefix-cdferppcykbbfegonjrzyzintbrl/PromChecklist_Prefix.pch -c /Users/billy_connolly/Documents/PromChecklist/TableViewCell.m -o /Users/billy_connolly/Documents/PromChecklist/build/PromChecklist.build/Debug-iphonesimulator/PromChecklist.build/Objects-normal/i386/TableViewCell.o0#
+lSLF07#2@69"Compile /Users/billy_connolly/Documents/PromChecklist/TableViewCell.m320562162#320562162#0(0"0(0#0#61"/Users/billy_connolly/Documents/PromChecklist/TableViewCell.m8613525856#2111"    cd /Users/billy_connolly/Documents/PromChecklist    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/billy_connolly/Documents/PromChecklist/build/PromChecklist.build/Debug-iphonesimulator/PromChecklist.build/PromChecklist-generated-files.hmap -I/Users/billy_connolly/Documents/PromChecklist/build/PromChecklist.build/Debug-iphonesimulator/PromChecklist.build/PromChecklist-own-target-headers.hmap -I/Users/billy_connolly/Documents/PromChecklist/build/PromChecklist.build/Debug-iphonesimulator/PromChecklist.build/PromChecklist-all-target-headers.hmap -iquote /Users/billy_connolly/Documents/PromChecklist/build/PromChecklist.build/Debug-iphonesimulator/PromChecklist.build/PromChecklist-project-headers.hmap -F/Users/billy_connolly/Documents/PromChecklist/build/Debug-iphonesimulator -I/Users/billy_connolly/Documents/PromChecklist/build/Debug-iphonesimulator/include -I/Users/billy_connolly/Documents/PromChecklist/build/PromChecklist.build/Debug-iphonesimulator/PromChecklist.build/DerivedSources/i386 -I/Users/billy_connolly/Documents/PromChecklist/build/PromChecklist.build/Debug-iphonesimulator/PromChecklist.build/DerivedSources -include /var/folders/XV/XVklkd+3Eyi9KQgq0ucWa++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/PromChecklist_Prefix-cdferppcykbbfegonjrzyzintbrl/PromChecklist_Prefix.pch -c /Users/billy_connolly/Documents/PromChecklist/TableViewCell.m -o /Users/billy_connolly/Documents/PromChecklist/build/PromChecklist.build/Debug-iphonesimulator/PromChecklist.build/Objects-normal/i386/TableViewCell.o0#
 
 CCompileC build/PromChecklist.build/Debug-iphonesimulator/PromChecklist.build/Objects-normal/i386/main.o /Users/billy_connolly/Documents/PromChecklist/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
 s320377312.561977
@@ -574,13 +615,21 @@ xobjective-c
 xcom.apple.compilers.gcc.4_2
 lSLF07#2@60"Compile /Users/billy_connolly/Documents/PromChecklist/main.m320377312#320377312#0(0"0(0#0#52"/Users/billy_connolly/Documents/PromChecklist/main.m8598700480#2093"    cd /Users/billy_connolly/Documents/PromChecklist    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/billy_connolly/Documents/PromChecklist/build/PromChecklist.build/Debug-iphonesimulator/PromChecklist.build/PromChecklist-generated-files.hmap -I/Users/billy_connolly/Documents/PromChecklist/build/PromChecklist.build/Debug-iphonesimulator/PromChecklist.build/PromChecklist-own-target-headers.hmap -I/Users/billy_connolly/Documents/PromChecklist/build/PromChecklist.build/Debug-iphonesimulator/PromChecklist.build/PromChecklist-all-target-headers.hmap -iquote /Users/billy_connolly/Documents/PromChecklist/build/PromChecklist.build/Debug-iphonesimulator/PromChecklist.build/PromChecklist-project-headers.hmap -F/Users/billy_connolly/Documents/PromChecklist/build/Debug-iphonesimulator -I/Users/billy_connolly/Documents/PromChecklist/build/Debug-iphonesimulator/include -I/Users/billy_connolly/Documents/PromChecklist/build/PromChecklist.build/Debug-iphonesimulator/PromChecklist.build/DerivedSources/i386 -I/Users/billy_connolly/Documents/PromChecklist/build/PromChecklist.build/Debug-iphonesimulator/PromChecklist.build/DerivedSources -include /var/folders/XV/XVklkd+3Eyi9KQgq0ucWa++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/PromChecklist_Prefix-cdferppcykbbfegonjrzyzintbrl/PromChecklist_Prefix.pch -c /Users/billy_connolly/Documents/PromChecklist/main.m -o /Users/billy_connolly/Documents/PromChecklist/build/PromChecklist.build/Debug-iphonesimulator/PromChecklist.build/Objects-normal/i386/main.o0#
 
+CCompileXIB /Users/billy_connolly/Documents/PromChecklist/AddNewDetailedViewController.xib
+s320547115.539570
+e320547116.036725
+r1
+xCompileXIB
+x/Users/billy_connolly/Documents/PromChecklist/AddNewDetailedViewController.xib
+lSLF07#2@43"CompileXIB AddNewDetailedViewController.xib320547115#320547116#0(0"0(0#0#78"/Users/billy_connolly/Documents/PromChecklist/AddNewDetailedViewController.xib8615659488#633"    cd /Users/billy_connolly/Documents/PromChecklist    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.2    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/billy_connolly/Documents/PromChecklist/build/Debug-iphonesimulator/PromChecklist.app/AddNewDetailedViewController.nib /Users/billy_connolly/Documents/PromChecklist/AddNewDetailedViewController.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk0#
+
 CCompileXIB /Users/billy_connolly/Documents/PromChecklist/AddNewViewController.xib
-s320523107.390524
-e320523107.840202
+s320560048.754269
+e320560049.123800
 r1
 xCompileXIB
 x/Users/billy_connolly/Documents/PromChecklist/AddNewViewController.xib
-lSLF07#2@35"CompileXIB AddNewViewController.xib320523107#320523107#0(0"0(0#0#70"/Users/billy_connolly/Documents/PromChecklist/AddNewViewController.xib30399761348493424#617"    cd /Users/billy_connolly/Documents/PromChecklist    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.2    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/billy_connolly/Documents/PromChecklist/build/Debug-iphonesimulator/PromChecklist.app/AddNewViewController.nib /Users/billy_connolly/Documents/PromChecklist/AddNewViewController.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk0#
+lSLF07#2@35"CompileXIB AddNewViewController.xib320560048#320560049#0(0"0(0#0#70"/Users/billy_connolly/Documents/PromChecklist/AddNewViewController.xib8613999168#617"    cd /Users/billy_connolly/Documents/PromChecklist    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.2    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/billy_connolly/Documents/PromChecklist/build/Debug-iphonesimulator/PromChecklist.app/AddNewViewController.nib /Users/billy_connolly/Documents/PromChecklist/AddNewViewController.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk0#
 
 CCompileXIB /Users/billy_connolly/Documents/PromChecklist/ChecklistDetailedViewController.xib
 s320448687.414211
@@ -702,23 +751,23 @@ xRowBackground.png
 lSLF07#2@22"Copy RowBackground.png319861566#319861566#0(0"0(0#0#63"/Users/billy_connolly/Documents/PromChecklist/RowBackground.png8617099872#502"    cd /Users/billy_connolly/Documents/PromChecklist    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/billy_connolly/Documents/PromChecklist/RowBackground.png /Users/billy_connolly/Documents/PromChecklist/build/Debug-iphonesimulator/PromChecklist.app0#
 
 CGenerateDSYMFile /Users/billy_connolly/Documents/PromChecklist/build/Debug-iphonesimulator/PromChecklist.app.dSYM /Users/billy_connolly/Documents/PromChecklist/build/Debug-iphonesimulator/PromChecklist.app/PromChecklist
-s320523141.847257
-e320523141.883214
+s320562423.470077
+e320562423.506947
 r1
 xGenerateDSYMFile
 x/Users/billy_connolly/Documents/PromChecklist/build/Debug-iphonesimulator/PromChecklist.app.dSYM
 x/Users/billy_connolly/Documents/PromChecklist/build/Debug-iphonesimulator/PromChecklist.app/PromChecklist
-lSLF07#2@127"GenerateDSYMFile build/Debug-iphonesimulator/PromChecklist.app.dSYM build/Debug-iphonesimulator/PromChecklist.app/PromChecklist320523141#320523141#0(0"0(0#0#105"/Users/billy_connolly/Documents/PromChecklist/build/Debug-iphonesimulator/PromChecklist.app/PromChecklist8614592000#422"    cd /Users/billy_connolly/Documents/PromChecklist    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil /Users/billy_connolly/Documents/PromChecklist/build/Debug-iphonesimulator/PromChecklist.app/PromChecklist -o /Users/billy_connolly/Documents/PromChecklist/build/Debug-iphonesimulator/PromChecklist.app.dSYM0#
+lSLF07#2@127"GenerateDSYMFile build/Debug-iphonesimulator/PromChecklist.app.dSYM build/Debug-iphonesimulator/PromChecklist.app/PromChecklist320562423#320562423#0(0"0(0#0#105"/Users/billy_connolly/Documents/PromChecklist/build/Debug-iphonesimulator/PromChecklist.app/PromChecklist8617721344#422"    cd /Users/billy_connolly/Documents/PromChecklist    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil /Users/billy_connolly/Documents/PromChecklist/build/Debug-iphonesimulator/PromChecklist.app/PromChecklist -o /Users/billy_connolly/Documents/PromChecklist/build/Debug-iphonesimulator/PromChecklist.app.dSYM0#
 
 CLd /Users/billy_connolly/Documents/PromChecklist/build/Debug-iphonesimulator/PromChecklist.app/PromChecklist normal i386
-s320523141.817956
-e320523141.847155
+s320562423.435595
+e320562423.469984
 r1
 xLd
 x/Users/billy_connolly/Documents/PromChecklist/build/Debug-iphonesimulator/PromChecklist.app/PromChecklist
 xnormal
 xi386
-lSLF07#2@110"Link /Users/billy_connolly/Documents/PromChecklist/build/Debug-iphonesimulator/PromChecklist.app/PromChecklist320523141#320523141#0(0"0(0#0#0"8614700928#965"    cd /Users/billy_connolly/Documents/PromChecklist    setenv MACOSX_DEPLOYMENT_TARGET 10.6    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -arch i386 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -L/Users/billy_connolly/Documents/PromChecklist/build/Debug-iphonesimulator -F/Users/billy_connolly/Documents/PromChecklist/build/Debug-iphonesimulator -filelist /Users/billy_connolly/Documents/PromChecklist/build/PromChecklist.build/Debug-iphonesimulator/PromChecklist.build/Objects-normal/i386/PromChecklist.LinkFileList -mmacosx-version-min=10.6 -Xlinker -objc_abi_version -Xlinker 2 -framework Foundation -framework UIKit -framework CoreGraphics -o /Users/billy_connolly/Documents/PromChecklist/build/Debug-iphonesimulator/PromChecklist.app/PromChecklist0#
+lSLF07#2@110"Link /Users/billy_connolly/Documents/PromChecklist/build/Debug-iphonesimulator/PromChecklist.app/PromChecklist320562423#320562423#0(0"0(0#0#0"8618234944#965"    cd /Users/billy_connolly/Documents/PromChecklist    setenv MACOSX_DEPLOYMENT_TARGET 10.6    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -arch i386 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -L/Users/billy_connolly/Documents/PromChecklist/build/Debug-iphonesimulator -F/Users/billy_connolly/Documents/PromChecklist/build/Debug-iphonesimulator -filelist /Users/billy_connolly/Documents/PromChecklist/build/PromChecklist.build/Debug-iphonesimulator/PromChecklist.build/Objects-normal/i386/PromChecklist.LinkFileList -mmacosx-version-min=10.6 -Xlinker -objc_abi_version -Xlinker 2 -framework Foundation -framework UIKit -framework CoreGraphics -o /Users/billy_connolly/Documents/PromChecklist/build/Debug-iphonesimulator/PromChecklist.app/PromChecklist0#
 
 CProcessInfoPlistFile /Users/billy_connolly/Documents/PromChecklist/build/Debug-iphonesimulator/PromChecklist.app/Info.plist PromChecklist-Info.plist
 s320377309.739144
@@ -743,10 +792,10 @@ xcom.apple.compilers.gcc.4_2
 lSLF07#2@35"Precompile PromChecklist_Prefix.pch320377311#320377312#0(0"0(0#0#70"/Users/billy_connolly/Documents/PromChecklist/PromChecklist_Prefix.pch8628114752#1972"    cd /Users/billy_connolly/Documents/PromChecklist    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/billy_connolly/Documents/PromChecklist/build/PromChecklist.build/Debug-iphonesimulator/PromChecklist.build/PromChecklist-generated-files.hmap -I/Users/billy_connolly/Documents/PromChecklist/build/PromChecklist.build/Debug-iphonesimulator/PromChecklist.build/PromChecklist-own-target-headers.hmap -I/Users/billy_connolly/Documents/PromChecklist/build/PromChecklist.build/Debug-iphonesimulator/PromChecklist.build/PromChecklist-all-target-headers.hmap -iquote /Users/billy_connolly/Documents/PromChecklist/build/PromChecklist.build/Debug-iphonesimulator/PromChecklist.build/PromChecklist-project-headers.hmap -F/Users/billy_connolly/Documents/PromChecklist/build/Debug-iphonesimulator -I/Users/billy_connolly/Documents/PromChecklist/build/Debug-iphonesimulator/include -I/Users/billy_connolly/Documents/PromChecklist/build/PromChecklist.build/Debug-iphonesimulator/PromChecklist.build/DerivedSources/i386 -I/Users/billy_connolly/Documents/PromChecklist/build/PromChecklist.build/Debug-iphonesimulator/PromChecklist.build/DerivedSources -c /Users/billy_connolly/Documents/PromChecklist/PromChecklist_Prefix.pch -o /var/folders/XV/XVklkd+3Eyi9KQgq0ucWa++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/PromChecklist_Prefix-cdferppcykbbfegonjrzyzintbrl/PromChecklist_Prefix.pch.gch0#
 
 CTouch /Users/billy_connolly/Documents/PromChecklist/build/Debug-iphonesimulator/PromChecklist.app
-s320523141.883295
-e320523141.886326
+s320562423.507034
+e320562423.509433
 r1
 xTouch
 x/Users/billy_connolly/Documents/PromChecklist/build/Debug-iphonesimulator/PromChecklist.app
-lSLF07#2@97"Touch /Users/billy_connolly/Documents/PromChecklist/build/Debug-iphonesimulator/PromChecklist.app320523141#320523141#0(0"0(0#0#0"8613829600#298"    cd /Users/billy_connolly/Documents/PromChecklist    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Users/billy_connolly/Documents/PromChecklist/build/Debug-iphonesimulator/PromChecklist.app0#
+lSLF07#2@97"Touch /Users/billy_connolly/Documents/PromChecklist/build/Debug-iphonesimulator/PromChecklist.app320562423#320562423#0(0"0(0#0#0"8617677184#298"    cd /Users/billy_connolly/Documents/PromChecklist    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Users/billy_connolly/Documents/PromChecklist/build/Debug-iphonesimulator/PromChecklist.app0#
 

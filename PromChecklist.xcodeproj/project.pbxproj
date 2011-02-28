@@ -22,6 +22,8 @@
 		77C4E0EC131879FB00D300EE /* CheckHalf.png in Resources */ = {isa = PBXBuildFile; fileRef = 77C4E0EB131879FB00D300EE /* CheckHalf.png */; };
 		77C4E13413187C3500D300EE /* ChecklistDetailedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77C4E13213187C3500D300EE /* ChecklistDetailedViewController.m */; };
 		77C4E13513187C3500D300EE /* ChecklistDetailedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 77C4E13313187C3500D300EE /* ChecklistDetailedViewController.xib */; };
+		77E1C6BE131B21F8008B7277 /* AddNewDetailedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77E1C6BC131B21F8008B7277 /* AddNewDetailedViewController.m */; };
+		77E1C6BF131B21F8008B7277 /* AddNewDetailedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 77E1C6BD131B21F8008B7277 /* AddNewDetailedViewController.xib */; };
 		77E260D0131AC7A300789A6F /* AddNewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77E260CE131AC7A300789A6F /* AddNewViewController.m */; };
 		77E260D1131AC7A300789A6F /* AddNewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 77E260CF131AC7A300789A6F /* AddNewViewController.xib */; };
 		77E475DE130F23760064F9C0 /* InitialLoadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77E475DC130F23760064F9C0 /* InitialLoadViewController.m */; };
@@ -58,6 +60,9 @@
 		77C4E13113187C3500D300EE /* ChecklistDetailedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChecklistDetailedViewController.h; sourceTree = "<group>"; };
 		77C4E13213187C3500D300EE /* ChecklistDetailedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChecklistDetailedViewController.m; sourceTree = "<group>"; };
 		77C4E13313187C3500D300EE /* ChecklistDetailedViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChecklistDetailedViewController.xib; sourceTree = "<group>"; };
+		77E1C6BB131B21F8008B7277 /* AddNewDetailedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddNewDetailedViewController.h; sourceTree = "<group>"; };
+		77E1C6BC131B21F8008B7277 /* AddNewDetailedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddNewDetailedViewController.m; sourceTree = "<group>"; };
+		77E1C6BD131B21F8008B7277 /* AddNewDetailedViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddNewDetailedViewController.xib; sourceTree = "<group>"; };
 		77E260CD131AC7A300789A6F /* AddNewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddNewViewController.h; sourceTree = "<group>"; };
 		77E260CE131AC7A300789A6F /* AddNewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddNewViewController.m; sourceTree = "<group>"; };
 		77E260CF131AC7A300789A6F /* AddNewViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddNewViewController.xib; sourceTree = "<group>"; };
@@ -141,6 +146,7 @@
 				77E4766D130F3D970064F9C0 /* Check.png */,
 				77C4E0EB131879FB00D300EE /* CheckHalf.png */,
 				77C4E0231318698800D300EE /* Back.png */,
+				77E1C6BD131B21F8008B7277 /* AddNewDetailedViewController.xib */,
 				77E260CF131AC7A300789A6F /* AddNewViewController.xib */,
 				77381B231319744100B3A9D6 /* RemindMeViewController.xib */,
 				778A37801310AF6E0092BAA8 /* ChecklistViewController.xib */,
@@ -168,12 +174,22 @@
 		77381B201319743200B3A9D6 /* Popup */ = {
 			isa = PBXGroup;
 			children = (
+				77E1C6BA131B21DC008B7277 /* Add New */,
 				77381B211319744100B3A9D6 /* RemindMeViewController.h */,
 				77381B221319744100B3A9D6 /* RemindMeViewController.m */,
-				77E260CD131AC7A300789A6F /* AddNewViewController.h */,
-				77E260CE131AC7A300789A6F /* AddNewViewController.m */,
 			);
 			name = Popup;
+			sourceTree = "<group>";
+		};
+		77E1C6BA131B21DC008B7277 /* Add New */ = {
+			isa = PBXGroup;
+			children = (
+				77E260CD131AC7A300789A6F /* AddNewViewController.h */,
+				77E260CE131AC7A300789A6F /* AddNewViewController.m */,
+				77E1C6BB131B21F8008B7277 /* AddNewDetailedViewController.h */,
+				77E1C6BC131B21F8008B7277 /* AddNewDetailedViewController.m */,
+			);
+			name = "Add New";
 			sourceTree = "<group>";
 		};
 		77E47637130F35AC0064F9C0 /* Modals */ = {
@@ -275,6 +291,7 @@
 				77C4E13513187C3500D300EE /* ChecklistDetailedViewController.xib in Resources */,
 				77381B251319744100B3A9D6 /* RemindMeViewController.xib in Resources */,
 				77E260D1131AC7A300789A6F /* AddNewViewController.xib in Resources */,
+				77E1C6BF131B21F8008B7277 /* AddNewDetailedViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,6 +313,7 @@
 				77C4E13413187C3500D300EE /* ChecklistDetailedViewController.m in Sources */,
 				77381B241319744100B3A9D6 /* RemindMeViewController.m in Sources */,
 				77E260D0131AC7A300789A6F /* AddNewViewController.m in Sources */,
+				77E1C6BE131B21F8008B7277 /* AddNewDetailedViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
