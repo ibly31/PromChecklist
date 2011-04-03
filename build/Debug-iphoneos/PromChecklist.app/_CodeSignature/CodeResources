@@ -6,11 +6,11 @@
 	<dict>
 		<key>AddNewDetailedViewController.nib</key>
 		<data>
-		chz7Tg8voX0l8MTavA60ahvEYd4=
+		uvBq2yhgtVrckU9W0ihRMigYBGs=
 		</data>
 		<key>AddNewViewController.nib</key>
 		<data>
-		5/ie1WDbcR7SURm+EX5LENHhz38=
+		svJBcA4pEZF675qwZZGZDxY3vz4=
 		</data>
 		<key>Back.png</key>
 		<data>
@@ -26,27 +26,47 @@
 		</data>
 		<key>ChecklistDetailedViewController.nib</key>
 		<data>
-		OIoz0t/owGIua6TeTxnI/wPtYT0=
+		QCOagiuEaOtP0//8/nKa3i6mMvs=
 		</data>
 		<key>ChecklistViewController.nib</key>
 		<data>
-		VGAZWG8QKUcbqMZBjkWDAZQDDwM=
+		1ldToXEMPAtiuweK0xHwxdz/Z4M=
+		</data>
+		<key>HelpViewController.nib</key>
+		<data>
+		ELG4q0d6vAL208o7AXSqhufZYj8=
+		</data>
+		<key>Icon.png</key>
+		<data>
+		RdjmjTlvCaQR3zIATIEC3XPEucg=
+		</data>
+		<key>Icon@2x.png</key>
+		<data>
+		kp08/l+p3/WqGiRGzgxrhGHxr0w=
+		</data>
+		<key>InformationViewController.nib</key>
+		<data>
+		cKgdjmLzSt0DgxX7InuBQ6iAv4Q=
 		</data>
 		<key>InitialLoadViewController.nib</key>
 		<data>
-		+tPVVN9Moez90LRcPuU83zEGxmw=
+		oK6zc11rnWZ0zmlwKy1ma40Pci8=
+		</data>
+		<key>LoadingScreenBackground.png</key>
+		<data>
+		YiK7DheU7Or6V77I31RWdAXiz6Q=
 		</data>
 		<key>MainMenuViewController.nib</key>
 		<data>
-		c7KE3359Q+XMN/iIXNXVA2IixfI=
+		9UmfqAgaFTFJldhOYvqF3XPAr/g=
 		</data>
 		<key>MainWindow.nib</key>
 		<data>
-		bvNB4i393uYf2ZM8eAR8m+JKIL0=
+		aW0JYMk1/rRJ5dohslLSryS/cow=
 		</data>
 		<key>OptionsViewController.nib</key>
 		<data>
-		jkMZpgPKuypctUZ6graryX5AGMQ=
+		O7eqkmhpG/vHvYb12iEGH1elmWA=
 		</data>
 		<key>PkgInfo</key>
 		<data>
@@ -54,23 +74,27 @@
 		</data>
 		<key>RemindMeViewController.nib</key>
 		<data>
-		A9MX3z+SpZfE36Pq7uERXkIb6sw=
+		vjzODp3riZ/P0QF0iAYVDP4uWUg=
 		</data>
-		<key>RowBackground.png</key>
+		<key>ResetDateViewController.nib</key>
 		<data>
-		17fWXu3OUbXDVZveraMyz9EdhLg=
+		aFsOjTXUT4qvUHVEraXb0oy5dkA=
 		</data>
 		<key>SplashScreenViewController.nib</key>
 		<data>
-		Cj3K+QaPYk9Wz4pPFL0A2de4s3o=
+		rXPSXHp4TK8Bp5iQbXZKSh9UwNs=
 		</data>
 		<key>Template.plist</key>
 		<data>
-		Jie8ZuYcXXHBpcgaVQoZ/0qi8SA=
+		R+4oD1V4ercwUbWsGohMfnoSvPs=
 		</data>
 		<key>embedded.mobileprovision</key>
 		<data>
-		KUDlcggdRzqJ5affn18ZeY4gqb4=
+		1hkAmxR/qO1F/MawGPyDejwLjcE=
+		</data>
+		<key>iTunesArtwork</key>
+		<data>
+		FCy1893+o23H9CUY+gMjtkPboSM=
 		</data>
 	</dict>
 	<key>rules</key>

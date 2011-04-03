@@ -10,9 +10,18 @@
 
 
 @interface OptionsViewController : UIViewController {
-
+	UILabel *notificationNumber;
+	UILabel *promDate;
+	NSArray *temp;
 }
 
+@property (nonatomic, retain) IBOutlet UILabel *notificationNumber;
+@property (nonatomic, retain) IBOutlet UILabel *promDate;
+@property (nonatomic, retain) NSArray *temp;
+
 - (IBAction)back;
+- (IBAction)clearAll;
+- (IBAction)changeColorScheme:(id)sender;
+- (IBAction)resetDate;
 
 @end

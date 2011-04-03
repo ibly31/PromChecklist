@@ -11,7 +11,7 @@
 
 @interface ChecklistViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>{
 	UITableView *tv;
-	NSArray *temp;
+	NSMutableArray *temp;
 }
 
 @property (nonatomic, retain) IBOutlet UITableView *tv;

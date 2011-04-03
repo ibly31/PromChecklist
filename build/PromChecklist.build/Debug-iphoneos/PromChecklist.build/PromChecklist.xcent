@@ -3,12 +3,12 @@
 <plist version="1.0">
 <dict>
 	<key>application-identifier</key>
-	<string>67XLPW73EG.com.yourcompany.PromChecklist</string>
+	<string>67XLPW73EG.com.ibly31.PromChecklist</string>
 	<key>get-task-allow</key>
 	<true/>
 	<key>keychain-access-groups</key>
 	<array>
-		<string>67XLPW73EG.com.yourcompany.PromChecklist</string>
+		<string>67XLPW73EG.com.ibly31.PromChecklist</string>
 	</array>
 </dict>
 </plist>

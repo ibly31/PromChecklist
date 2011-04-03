@@ -102,8 +102,10 @@
 - (void)setDate:(NSDate *)date{
 	if(date != nil){
 		NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
-		[dateFormatter setDateFormat: @"EEEE, MMMM d YYYY"];
+		[dateFormatter setDateFormat: @"EEEE, MMMM d yyyy - HH:mm"];
 		remindLabel.text = [dateFormatter stringFromDate: date];
+	}else{
+		remindLabel.text = @"";
 	}
 }
 

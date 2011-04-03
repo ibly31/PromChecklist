@@ -7,14 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ChecklistViewController.h"
 
 
 @interface MainMenuViewController : UIViewController {
-
+	ChecklistViewController *cvc;
 }
 
 - (IBAction)viewChecklist;
 - (IBAction)options;
 - (IBAction)help;
+- (IBAction)information;
 
 @end

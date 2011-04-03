@@ -9,7 +9,9 @@
 #import "MainMenuViewController.h"
 #import "PromChecklistAppDelegate.h"
 #import "OptionsViewController.h"
+#import "HelpViewController.h"
 #import "ChecklistViewController.h"
+#import "InformationViewController.h"
 
 @implementation MainMenuViewController
 
@@ -23,12 +25,17 @@
     return self;
 }
 
-- (void)viewDidLoad{
-	[self viewChecklist];
+- (void)viewWillAppear:(BOOL)animated{
+	float r = [[NSUserDefaults standardUserDefaults] floatForKey:@"ColorSchemeR"];
+	float g = [[NSUserDefaults standardUserDefaults] floatForKey:@"ColorSchemeG"];
+	float b = [[NSUserDefaults standardUserDefaults] floatForKey:@"ColorSchemeB"];
+	UIColor	*colorScheme = [UIColor colorWithRed:r green:g blue:b alpha:1.0f];
+	[self.navigationController.navigationBar setTintColor: colorScheme];
+	//[self viewChecklist];
 }
 
 - (IBAction)viewChecklist{
-	ChecklistViewController *cvc = [[ChecklistViewController alloc] initWithNibName:@"ChecklistViewController" bundle:nil];
+	cvc = [[ChecklistViewController alloc] initWithNibName:@"ChecklistViewController" bundle:nil];
 	PromChecklistAppDelegate *pcad = [[UIApplication sharedApplication] delegate];
 	[[pcad navController] pushViewController: cvc animated: YES];
 	[cvc release];
@@ -36,12 +43,27 @@
 
 - (IBAction)options{
 	OptionsViewController *ovc = [[OptionsViewController alloc] initWithNibName:@"OptionsViewController" bundle:nil];
-	[self presentModalViewController:ovc animated:YES];
+	UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:ovc];
+	float r = [[NSUserDefaults standardUserDefaults] floatForKey:@"ColorSchemeR"];
+	float g = [[NSUserDefaults standardUserDefaults] floatForKey:@"ColorSchemeG"];
+	float b = [[NSUserDefaults standardUserDefaults] floatForKey:@"ColorSchemeB"];
+	UIColor	*colorScheme = [UIColor colorWithRed:r green:g blue:b alpha:1.0f];
+	[navController.navigationBar setTintColor: colorScheme];
 	[ovc release];
+	[self presentModalViewController:navController animated:YES];
+	[navController release];
+}
+
+- (IBAction)information{
+	InformationViewController *ivc = [[InformationViewController alloc] initWithNibName:@"InformationViewController" bundle:nil];
+	[self presentModalViewController:ivc animated:YES];
+	[ivc release];
 }
 
 - (IBAction)help{
-	
+	HelpViewController *hvc = [[HelpViewController alloc] initWithNibName:@"HelpViewController" bundle:nil];
+	[self presentModalViewController: hvc animated:YES];
+	[hvc release];
 }
 
 /*

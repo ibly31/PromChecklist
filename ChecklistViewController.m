@@ -34,7 +34,7 @@
 		NSString *documentsDirectory = [paths objectAtIndex: 0];
 		NSString *checklistFileName = [documentsDirectory stringByAppendingPathComponent: @"Checklist.plist"];
 		
-		temp = [[NSArray alloc] initWithContentsOfFile: checklistFileName];
+		temp = [[NSMutableArray alloc] initWithContentsOfFile: checklistFileName];
 		
 		UIBarButtonItem *startEditing = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemEdit target:self action:@selector(toggleEditing)];
 		[self.navigationItem setRightBarButtonItem: startEditing];
@@ -63,14 +63,31 @@
 	}
 }
 
+- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath{
+	return YES;
+}
 
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath{
+	if(editingStyle == UITableViewCellEditingStyleDelete){
+		[[temp objectAtIndex: [indexPath section]] removeObjectAtIndex: [indexPath row]];
+		[tv deleteRowsAtIndexPaths:[NSArray arrayWithObject: indexPath] withRowAnimation: UITableViewRowAnimationFade];
+		NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+		NSString *documentsDirectory = [paths objectAtIndex: 0];
+		NSString *checklistName = [documentsDirectory stringByAppendingPathComponent: @"Checklist.plist"];
+		[temp writeToFile: checklistName atomically: YES];
+	}
+}
 
 - (IBAction)addNewItem{
 	AddNewViewController *anvc = [[AddNewViewController alloc] initWithNibName:@"AddNewViewController" bundle:nil];
 	[anvc setCvc: self];
 	UINavigationController *popupNav = [[UINavigationController alloc] initWithRootViewController: anvc];
 	[self presentModalViewController:popupNav animated:YES];
-	[popupNav.navigationBar setTintColor: [UIColor colorWithRed:0.8f green:0.1f blue:0.1f alpha:1.0f]];
+	float r = [[NSUserDefaults standardUserDefaults] floatForKey:@"ColorSchemeR"];
+	float g = [[NSUserDefaults standardUserDefaults] floatForKey:@"ColorSchemeG"];
+	float b = [[NSUserDefaults standardUserDefaults] floatForKey:@"ColorSchemeB"];
+	UIColor	*colorScheme = [UIColor colorWithRed:r green:g blue:b alpha:1.0f];
+	[popupNav.navigationBar setTintColor: colorScheme];
 	[popupNav release];
 	
 	[anvc release];
@@ -101,18 +118,33 @@
 }
 
 - (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath{
-	NSDictionary *currentDict = [[temp objectAtIndex: [fromIndexPath section]] objectAtIndex: [fromIndexPath row]];
-	[[temp objectAtIndex: [toIndexPath section]] insertObject:currentDict atIndex:[toIndexPath row]];
+	NSMutableDictionary *toMoveDict = [[[temp objectAtIndex: [fromIndexPath section]] objectAtIndex: [fromIndexPath row]] retain];
+	int newOffset = 0;
+	if([fromIndexPath section] == 0){
+		newOffset = -90;
+	}else if([fromIndexPath section] == 1){
+		newOffset = -60;
+	}else if([fromIndexPath section] == 2){
+		newOffset = -30;
+	}else if([fromIndexPath section] == 3){
+		newOffset = -7;
+	}else if([fromIndexPath section] == 4){
+		newOffset = -1;
+	}else{
+		newOffset = 0;
+	}
+	[toMoveDict setObject:[NSNumber numberWithInt: newOffset] forKey:@"Offset"];
+	
 	[[temp objectAtIndex: [fromIndexPath section]] removeObjectAtIndex: [fromIndexPath row]];
+	[[temp objectAtIndex: [toIndexPath section]] insertObject:toMoveDict atIndex: [toIndexPath row]];
+	
 	NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
 	NSString *documentsDirectory = [paths objectAtIndex: 0];
 	NSString *checklistName = [documentsDirectory stringByAppendingPathComponent: @"Checklist.plist"];
 	[temp writeToFile: checklistName atomically: YES];
-	[tv reloadData];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    
     static NSString *CellIdentifier = @"Cell";
     
     TableViewCell *cell = (TableViewCell *)[tableView dequeueReusableCellWithIdentifier:CellIdentifier];

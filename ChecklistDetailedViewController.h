@@ -43,4 +43,6 @@
 - (IBAction)changedSegment;
 - (IBAction)remindMe;
 
+- (IBAction)cancelCurrent;
+
 @end

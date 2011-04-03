@@ -7,6 +7,7 @@
 //
 
 #import "PromChecklistAppDelegate.h"
+#import "ChecklistDetailedViewController.h"
 
 @implementation PromChecklistAppDelegate
 
@@ -19,11 +20,24 @@
 #pragma mark -
 #pragma mark Application lifecycle
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {    
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions{
 	ssvc = [[SplashScreenViewController alloc] initWithNibName:@"SplashScreenViewController" bundle:nil];
 	ssvc.pcad = self;
 	[self.window addSubview: ssvc.view];
     [self.window makeKeyAndVisible];
+	
+	UILocalNotification *localNotification = [launchOptions objectForKey: UIApplicationLaunchOptionsLocalNotificationKey];
+	if(localNotification != nil){
+		NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+		NSString *documentsDirectory = [paths objectAtIndex: 0];
+		NSString *checklistFileName = [documentsDirectory stringByAppendingPathComponent: @"Checklist.plist"];
+		NSMutableArray *temp = [[NSArray alloc] initWithContentsOfFile: checklistFileName];
+		NSDictionary *userInfo = [localNotification userInfo];
+		
+		[[[temp objectAtIndex: [[userInfo objectForKey:@"Section"] intValue]] objectAtIndex: [[userInfo objectForKey:@"Row"] intValue]] removeObjectForKey:@"RemindDate"];
+		[temp writeToFile:checklistFileName atomically:YES];
+		[temp release];
+	}
     return YES;
 }
 
@@ -40,8 +54,39 @@
 		navController = [[UINavigationController alloc] initWithRootViewController: ilvc];
 		[ilvc release];
 	}
-	navController.navigationBar.tintColor = [UIColor colorWithRed:0.8f green:0.1f blue:0.1f alpha:1.0f];
+	
+	if([[NSUserDefaults standardUserDefaults] objectForKey:@"ColorSchemeR"] != nil){
+		float r = [[NSUserDefaults standardUserDefaults] floatForKey:@"ColorSchemeR"];
+		float g = [[NSUserDefaults standardUserDefaults] floatForKey:@"ColorSchemeG"];
+		float b = [[NSUserDefaults standardUserDefaults] floatForKey:@"ColorSchemeB"];
+		UIColor	*colorScheme = [UIColor colorWithRed:r green:g blue:b alpha:1.0f];
+		navController.navigationBar.tintColor = colorScheme;
+	}else{
+		UIColor *colorScheme = [UIColor colorWithRed:0.96f green:0.39f blue:0.67f alpha:1.0f];
+		[[NSUserDefaults standardUserDefaults] setFloat:0.96f forKey:@"ColorSchemeR"];
+		[[NSUserDefaults standardUserDefaults] setFloat:0.39f forKey:@"ColorSchemeG"];
+		[[NSUserDefaults standardUserDefaults] setFloat:0.67f forKey:@"ColorSchemeB"];
+		[[NSUserDefaults standardUserDefaults] synchronize];
+		navController.navigationBar.tintColor = colorScheme;
+	}
+	
 	[self.window addSubview: navController.view];
+}
+
+- (void)application:(UIApplication *)application didReceiveLocalNotification:(UILocalNotification *)notification{
+	UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"PromChecklist" message:[notification alertBody] delegate:nil cancelButtonTitle:@"Okay" otherButtonTitles: nil];
+	[alert show];
+	[alert release];
+	
+	NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+	NSString *documentsDirectory = [paths objectAtIndex: 0];
+	NSString *checklistFileName = [documentsDirectory stringByAppendingPathComponent: @"Checklist.plist"];
+	NSMutableArray *temp = [[NSArray alloc] initWithContentsOfFile: checklistFileName];
+	NSDictionary *userInfo = [notification userInfo];
+	
+	[[[temp objectAtIndex: [[userInfo objectForKey:@"Section"] intValue]] objectAtIndex: [[userInfo objectForKey:@"Row"] intValue]] removeObjectForKey:@"RemindDate"];
+	[temp writeToFile:checklistFileName atomically:YES];
+	[temp release];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {

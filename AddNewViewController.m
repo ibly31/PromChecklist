@@ -61,6 +61,23 @@
 		offset = 0;
 	}
 	
+	if([name length] == 0 || [name length] > 30){
+		UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Name Error" message:@"The name you have chosen is either too short or too long." delegate:nil cancelButtonTitle:@"Okay" otherButtonTitles:nil];
+		[alert show];
+		[alert release];
+		return;
+	}else if([desc length] == 0 || [desc length] > 500){
+		UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Description Error" message:@"Description field was left blank." delegate:nil cancelButtonTitle:@"Okay" otherButtonTitles:nil];
+		[alert show];
+		[alert release];
+		return;
+	}else if(section < 0 || section >5){
+		UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Section Error" message:@"Section wasn't chosen properly." delegate:nil cancelButtonTitle:@"Okay" otherButtonTitles:nil];
+		[alert show];
+		[alert release];
+		return;
+	}
+	
 	NSArray *objs = [NSArray arrayWithObjects: name, desc, [NSNumber numberWithInteger: offset], [NSNumber numberWithInt: 0], nil];
 	NSArray *keys = [NSArray arrayWithObjects: @"Name", @"Description", @"Offset", @"Progress",nil];
 	
@@ -112,6 +129,14 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
 	return 3;
+}
+
+- (NSIndexPath *)tableView:(UITableView *)tableView willSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+	if([indexPath section] != 2){
+		return nil;
+	}else{
+		return indexPath;
+	}
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{

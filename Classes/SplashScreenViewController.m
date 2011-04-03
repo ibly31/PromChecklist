@@ -17,14 +17,14 @@
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-		NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:0.5f target:self selector:@selector(doneLoading) userInfo:nil repeats:NO];
+		NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:3.0f target:self selector:@selector(doneLoading) userInfo:nil repeats:NO];
 	}
     return self;
 }
 
 - (void)doneLoading{
 	BOOL dateExists = ([[NSUserDefaults standardUserDefaults] objectForKey: @"PromDate"] != nil);
-	[pcad endSplashScreenWithInitialLoad: NO];
+	[pcad endSplashScreenWithInitialLoad: dateExists];
 }
 
 /*

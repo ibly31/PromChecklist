@@ -28,6 +28,9 @@
 }
 
 - (void)viewDidLoad{
+	if([date compare: [NSDate date]] == NSOrderedAscending){
+		date = [NSDate date];
+	}
 	[dpicker setDate: date animated:NO];
 }
 
@@ -39,12 +42,25 @@
 		[alert release];
 		return;
 	}
+	
 	NSIndexPath *index = cdvc.index;
 	[[[cdvc.cvc.temp objectAtIndex: [index section]] objectAtIndex: [index row]] setObject:toSched forKey:@"RemindDate"];
 	NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
 	NSString *documentsDirectory = [paths objectAtIndex: 0];
 	NSString *checklistName = [documentsDirectory stringByAppendingPathComponent: @"Checklist.plist"];
 	[cdvc.cvc.temp writeToFile: checklistName atomically: YES];
+	
+	NSString *name = [[[cdvc.cvc.temp objectAtIndex: [index section]] objectAtIndex: [index row]] objectForKey:@"Name"];
+	UILocalNotification *notification = [[UILocalNotification alloc] init];
+	[notification setFireDate: toSched];
+	[notification setTimeZone: [NSTimeZone systemTimeZone]];
+	[notification setAlertBody: [NSString stringWithFormat: @"Reminder: %@", name]];
+	[notification setSoundName: UILocalNotificationDefaultSoundName];
+	NSDictionary *userInfo = [NSDictionary dictionaryWithObjects: [NSArray arrayWithObjects: [NSNumber numberWithInt: [index section]], [NSNumber numberWithInt:[index row]], nil] forKeys: [NSArray arrayWithObjects: @"Section", @"Row", nil]];
+	[notification setUserInfo: userInfo];
+	
+	[[UIApplication sharedApplication] scheduleLocalNotification: notification];
+	[notification release];
 	
 	PromChecklistAppDelegate *pcad = [[UIApplication sharedApplication] delegate];
 	[pcad.navController popViewControllerAnimated: YES];

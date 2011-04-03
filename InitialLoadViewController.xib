@@ -84,7 +84,7 @@
 						<bool key="IBUIMultipleTouchEnabled">YES</bool>
 						<bool key="IBUIUserInteractionEnabled">NO</bool>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-						<string key="IBUIText">Please choose a date that your prom happens. If you wish to change this date, please open Options in the main menu.</string>
+						<string key="IBUIText">Enter the date of your prom. If you wish to change this date, open the options in the main menu.</string>
 						<int key="IBUITextAlignment">1</int>
 						<object class="IBUITextInputTraits" key="IBUITextInputTraits">
 							<int key="IBUIAutocapitalizationType">2</int>

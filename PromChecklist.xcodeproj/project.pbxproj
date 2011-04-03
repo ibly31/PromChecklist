@@ -13,9 +13,18 @@
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765FC0DF74451002DB57D /* CoreGraphics.framework */; };
 		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
-		770B1D1E131743D9008260C9 /* Template.plist in Resources */ = {isa = PBXBuildFile; fileRef = 770B1D1D131743D9008260C9 /* Template.plist */; };
+		770E4BFF1321C50300FAFE95 /* Template.plist in Resources */ = {isa = PBXBuildFile; fileRef = 770E4BFE1321C50300FAFE95 /* Template.plist */; };
+		7732AAFE132076130045CEC1 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 7732AAFB132076130045CEC1 /* Icon.png */; };
+		7732AAFF132076130045CEC1 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7732AAFC132076130045CEC1 /* Icon@2x.png */; };
 		77381B241319744100B3A9D6 /* RemindMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77381B221319744100B3A9D6 /* RemindMeViewController.m */; };
 		77381B251319744100B3A9D6 /* RemindMeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 77381B231319744100B3A9D6 /* RemindMeViewController.xib */; };
+		773B36AA1321BBAE00E75E07 /* InformationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 773B36A81321BBAE00E75E07 /* InformationViewController.m */; };
+		773B36AB1321BBAE00E75E07 /* InformationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 773B36A91321BBAE00E75E07 /* InformationViewController.xib */; };
+		77523BA6131F20E000B387D2 /* HelpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77523BA4131F20E000B387D2 /* HelpViewController.m */; };
+		77523BA7131F20E000B387D2 /* HelpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 77523BA5131F20E000B387D2 /* HelpViewController.xib */; };
+		77523BB5131F2AE100B387D2 /* LoadingScreenBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 77523BB4131F2AE100B387D2 /* LoadingScreenBackground.png */; };
+		77679DC2132090DF005C0F14 /* ResetDateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77679DC0132090DF005C0F14 /* ResetDateViewController.m */; };
+		77679DC3132090DF005C0F14 /* ResetDateViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 77679DC1132090DF005C0F14 /* ResetDateViewController.xib */; };
 		778A37811310AF6E0092BAA8 /* ChecklistViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 778A377F1310AF6E0092BAA8 /* ChecklistViewController.m */; };
 		778A37821310AF6E0092BAA8 /* ChecklistViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 778A37801310AF6E0092BAA8 /* ChecklistViewController.xib */; };
 		77C4E0241318698800D300EE /* Back.png in Resources */ = {isa = PBXBuildFile; fileRef = 77C4E0231318698800D300EE /* Back.png */; };
@@ -48,10 +57,22 @@
 		28AD733E0D9D9553002E5188 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* PromChecklist_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PromChecklist_Prefix.pch; sourceTree = "<group>"; };
-		770B1D1D131743D9008260C9 /* Template.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Template.plist; path = ../../Desktop/Template.plist; sourceTree = SOURCE_ROOT; };
+		770E4BFE1321C50300FAFE95 /* Template.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Template.plist; sourceTree = "<group>"; };
+		7732AAFB132076130045CEC1 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		7732AAFC132076130045CEC1 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
 		77381B211319744100B3A9D6 /* RemindMeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RemindMeViewController.h; sourceTree = "<group>"; };
 		77381B221319744100B3A9D6 /* RemindMeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RemindMeViewController.m; sourceTree = "<group>"; };
 		77381B231319744100B3A9D6 /* RemindMeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RemindMeViewController.xib; sourceTree = "<group>"; };
+		773B36A71321BBAE00E75E07 /* InformationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InformationViewController.h; sourceTree = "<group>"; };
+		773B36A81321BBAE00E75E07 /* InformationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InformationViewController.m; sourceTree = "<group>"; };
+		773B36A91321BBAE00E75E07 /* InformationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InformationViewController.xib; sourceTree = "<group>"; };
+		77523BA3131F20E000B387D2 /* HelpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelpViewController.h; sourceTree = "<group>"; };
+		77523BA4131F20E000B387D2 /* HelpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelpViewController.m; sourceTree = "<group>"; };
+		77523BA5131F20E000B387D2 /* HelpViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HelpViewController.xib; sourceTree = "<group>"; };
+		77523BB4131F2AE100B387D2 /* LoadingScreenBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LoadingScreenBackground.png; sourceTree = "<group>"; };
+		77679DBF132090DF005C0F14 /* ResetDateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResetDateViewController.h; sourceTree = "<group>"; };
+		77679DC0132090DF005C0F14 /* ResetDateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResetDateViewController.m; sourceTree = "<group>"; };
+		77679DC1132090DF005C0F14 /* ResetDateViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ResetDateViewController.xib; sourceTree = "<group>"; };
 		778A377E1310AF6E0092BAA8 /* ChecklistViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChecklistViewController.h; sourceTree = "<group>"; };
 		778A377F1310AF6E0092BAA8 /* ChecklistViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChecklistViewController.m; sourceTree = "<group>"; };
 		778A37801310AF6E0092BAA8 /* ChecklistViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChecklistViewController.xib; sourceTree = "<group>"; };
@@ -142,7 +163,9 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				770B1D1D131743D9008260C9 /* Template.plist */,
+				770E4BFE1321C50300FAFE95 /* Template.plist */,
+				7732AAE5132075BC0045CEC1 /* Icons */,
+				77523BC4131F2C7600B387D2 /* GUI */,
 				77E4766D130F3D970064F9C0 /* Check.png */,
 				77C4E0EB131879FB00D300EE /* CheckHalf.png */,
 				77C4E0231318698800D300EE /* Back.png */,
@@ -151,6 +174,9 @@
 				77381B231319744100B3A9D6 /* RemindMeViewController.xib */,
 				778A37801310AF6E0092BAA8 /* ChecklistViewController.xib */,
 				77C4E13313187C3500D300EE /* ChecklistDetailedViewController.xib */,
+				77523BA5131F20E000B387D2 /* HelpViewController.xib */,
+				77679DC1132090DF005C0F14 /* ResetDateViewController.xib */,
+				773B36A91321BBAE00E75E07 /* InformationViewController.xib */,
 				77E4763A130F35B60064F9C0 /* OptionsViewController.xib */,
 				77E475DD130F23760064F9C0 /* InitialLoadViewController.xib */,
 				77F72DE3130E08DC0063B68C /* MainMenuViewController.xib */,
@@ -171,6 +197,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		7732AAE5132075BC0045CEC1 /* Icons */ = {
+			isa = PBXGroup;
+			children = (
+				7732AAFB132076130045CEC1 /* Icon.png */,
+				7732AAFC132076130045CEC1 /* Icon@2x.png */,
+			);
+			name = Icons;
+			sourceTree = "<group>";
+		};
 		77381B201319743200B3A9D6 /* Popup */ = {
 			isa = PBXGroup;
 			children = (
@@ -179,6 +214,14 @@
 				77381B221319744100B3A9D6 /* RemindMeViewController.m */,
 			);
 			name = Popup;
+			sourceTree = "<group>";
+		};
+		77523BC4131F2C7600B387D2 /* GUI */ = {
+			isa = PBXGroup;
+			children = (
+				77523BB4131F2AE100B387D2 /* LoadingScreenBackground.png */,
+			);
+			name = GUI;
 			sourceTree = "<group>";
 		};
 		77E1C6BA131B21DC008B7277 /* Add New */ = {
@@ -195,8 +238,14 @@
 		77E47637130F35AC0064F9C0 /* Modals */ = {
 			isa = PBXGroup;
 			children = (
+				773B36A71321BBAE00E75E07 /* InformationViewController.h */,
+				773B36A81321BBAE00E75E07 /* InformationViewController.m */,
 				77E47638130F35B60064F9C0 /* OptionsViewController.h */,
 				77E47639130F35B60064F9C0 /* OptionsViewController.m */,
+				77523BA3131F20E000B387D2 /* HelpViewController.h */,
+				77523BA4131F20E000B387D2 /* HelpViewController.m */,
+				77679DBF132090DF005C0F14 /* ResetDateViewController.h */,
+				77679DC0132090DF005C0F14 /* ResetDateViewController.m */,
 			);
 			name = Modals;
 			sourceTree = "<group>";
@@ -285,13 +334,19 @@
 				77E4763C130F35B60064F9C0 /* OptionsViewController.xib in Resources */,
 				77E4766E130F3D970064F9C0 /* Check.png in Resources */,
 				778A37821310AF6E0092BAA8 /* ChecklistViewController.xib in Resources */,
-				770B1D1E131743D9008260C9 /* Template.plist in Resources */,
 				77C4E0241318698800D300EE /* Back.png in Resources */,
 				77C4E0EC131879FB00D300EE /* CheckHalf.png in Resources */,
 				77C4E13513187C3500D300EE /* ChecklistDetailedViewController.xib in Resources */,
 				77381B251319744100B3A9D6 /* RemindMeViewController.xib in Resources */,
 				77E260D1131AC7A300789A6F /* AddNewViewController.xib in Resources */,
 				77E1C6BF131B21F8008B7277 /* AddNewDetailedViewController.xib in Resources */,
+				77523BA7131F20E000B387D2 /* HelpViewController.xib in Resources */,
+				77523BB5131F2AE100B387D2 /* LoadingScreenBackground.png in Resources */,
+				7732AAFE132076130045CEC1 /* Icon.png in Resources */,
+				7732AAFF132076130045CEC1 /* Icon@2x.png in Resources */,
+				77679DC3132090DF005C0F14 /* ResetDateViewController.xib in Resources */,
+				773B36AB1321BBAE00E75E07 /* InformationViewController.xib in Resources */,
+				770E4BFF1321C50300FAFE95 /* Template.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -314,6 +369,9 @@
 				77381B241319744100B3A9D6 /* RemindMeViewController.m in Sources */,
 				77E260D0131AC7A300789A6F /* AddNewViewController.m in Sources */,
 				77E1C6BE131B21F8008B7277 /* AddNewDetailedViewController.m in Sources */,
+				77523BA6131F20E000B387D2 /* HelpViewController.m in Sources */,
+				77679DC2132090DF005C0F14 /* ResetDateViewController.m in Sources */,
+				773B36AA1321BBAE00E75E07 /* InformationViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,16 +397,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Shaun Connolly";
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = PromChecklist_Prefix.pch;
 				INFOPLIST_FILE = "PromChecklist-Info.plist";
 				PRODUCT_NAME = PromChecklist;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "DE030539-6122-4163-AA07-A7398800F57E";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		C01FCF4F08A954540054247B /* Debug */ = {
+		77502DD013243D29009E7FC3 /* Distribution */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
@@ -356,7 +416,39 @@
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				PREBINDING = NO;
+				SDKROOT = iphoneos;
+			};
+			name = Distribution;
+		};
+		77502DD113243D29009E7FC3 /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Shaun Connolly";
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = PromChecklist_Prefix.pch;
+				INFOPLIST_FILE = "PromChecklist-Info.plist";
+				PRODUCT_NAME = PromChecklist;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "DE030539-6122-4163-AA07-A7398800F57E";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Distribution;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Shaun Connolly";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				PROVISIONING_PROFILE = "DE030539-6122-4163-AA07-A7398800F57E";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -383,6 +475,7 @@
 			buildConfigurations = (
 				1D6058940D05DD3E006BFB54 /* Debug */,
 				1D6058950D05DD3E006BFB54 /* Release */,
+				77502DD113243D29009E7FC3 /* Distribution */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -392,6 +485,7 @@
 			buildConfigurations = (
 				C01FCF4F08A954540054247B /* Debug */,
 				C01FCF5008A954540054247B /* Release */,
+				77502DD013243D29009E7FC3 /* Distribution */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
